@@ -53,3 +53,8 @@
 
 // fix most common mistake
 #define ENT RET
+
+// other names for trans & none
+#define DE______ trans
+#define DE___bad none
+#define DE_TODO_ none

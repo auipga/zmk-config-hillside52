@@ -28,8 +28,22 @@
         combos {
                 compatible = "zmk,combos";
 
-                COMBO(DE_LBRC ,  2  3, LBRC) /* [                      */ COMBO(DE_LPAR ,  7  8, LPAR) // (
-                COMBO(DE_RBKT ,  3  4, RBKT) /* ]                      */ COMBO(DE_RPAR ,  8  9, RPAR) // )
+                // key numbers
+                //       0   1   2   3   4   5                      6   7   8   9  10  11
+                //      12 [13][14][15][16] 17                     18 [19][20][21][22] 23
+                //      24  25 [26] 27  28  29  30  31     32  33  34  35  36 [37] 38  39
+                //                 (40) 41  42 [43] 44     45 [46] 47  48 (49)
+
+                //<editor-fold desc="myrioku style combos">
+                // row 0                          []                                                          ()
+                COMBO(DE_LBRC ,  2  3, LBRC  ) /* [                      */ COMBO(DE_LPAR ,  7  8, LPAR  ) // (
+                COMBO(DE_RBKT ,  3  4, RBKT  ) /* ]                      */ COMBO(DE_RPAR ,  8  9, RPAR  ) // )
+
+                // row 1                          -=+                                                         |"'
+                COMBO(DE______, 13 14, _____ ) /* free                   */ COMBO(DE_PIPE , 18 19, PIPE  ) // |
+                COMBO(DE_MINUS, 14 15, MINUS ) /* -                      */ COMBO(DE_DQT  , 19 20, DQT   ) // "
+                COMBO(DE_EQUAL, 15 16, EQUAL ) /* =                      */ COMBO(DE_SQT  , 20 21, SQT   ) // '
+                //</editor-fold>
         };
 
         keymap {
