@@ -40,7 +40,8 @@
                 COMBO(DE_RBKT ,  3  4, RBKT  ) /* ]                      */ COMBO(DE_RPAR ,  8  9, RPAR  ) // )
 
                 // row 1                          -=+                                                         |"'
-                COMBO(DE______, 13 14, _____ ) /* free                   */ COMBO(DE_PIPE , 18 19, PIPE  ) // |
+                COMBO(DE______, 13 14, _____ ) /* free
+                               */ COMBO(DE_PIPE , 18 19, PIP  ) // |
                 COMBO(DE_MINUS, 14 15, MINUS ) /* -                      */ COMBO(DE_DQT  , 19 20, DQT   ) // "
                 COMBO(DE_EQUAL, 15 16, EQUAL ) /* =                      */ COMBO(DE_SQT  , 20 21, SQT   ) // '
                 //</editor-fold>
