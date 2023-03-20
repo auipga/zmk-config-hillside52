@@ -31,8 +31,8 @@
                 // key numbers
                 //       0   1   2   3   4   5                      6   7   8   9  10  11
                 //      12 [13][14][15][16] 17                     18 [19][20][21][22] 23
-                //      24  25 [26] 27  28  29  30  31     32  33  34  35  36 [37] 38  39
-                //                 (40) 41  42 [43] 44     45 [46] 47  48 (49)
+                //      24  25 [26] 27  28  29  30             31  32  33  34 [35] 36  37
+                //      38  39  40     (41) 42  43  44     45  46  47 (48)     49  50  51
 
                 //<editor-fold desc="myrioku style combos">
                 // row 0                          []                                                          ()
@@ -50,10 +50,10 @@
                 COMBO(DE_TODO_, 14 16, _14_16) /* Shift+Ins              */ COMBO(DE______, 19 21, _19_21) // free
 
                 // row 2                          {}                                                          <>
-                COMBO(DE_LBRC , 26 27, LBRC  ) /* {                      */ COMBO(DE______, 34 35, _34_35) // free
-                COMBO(DE_RBRC , 27 28, RBRC  ) /* }                      */ COMBO(DE_LT   , 35 36, LT    ) // <
-                COMBO(DE______, 28 29, _28_29) /* free                   */ COMBO(DE_GT   , 36 37, GT    ) // >
-                COMBO(DE_TODO_, 26 28, _26_28) /* {} <-                  */ COMBO(DE_TODO_, 35 37, _35_37) // <> <-
+                COMBO(DE_LBRC , 26 27, LBRC  ) /* {                      */ COMBO(DE______, 32 33, _32_33) // free
+                COMBO(DE_RBRC , 27 28, RBRC  ) /* }                      */ COMBO(DE_LT   , 33 34, LT    ) // <
+                COMBO(DE______, 28 29, _28_29) /* free                   */ COMBO(DE_GT   , 34 35, GT    ) // >
+                COMBO(DE_TODO_, 26 28, _26_28) /* {} <-                  */ COMBO(DE_TODO_, 33 35, _33_35) // <> <-
 
                 // row 0/1                        @#$%                                                        ^&*\
                 COMBO(DE___bad,  1 13, _1_13 ) /* bad                    */ COMBO(DE_CARET,  6 18, CARET ) // ^
@@ -63,20 +63,20 @@
                 COMBO(DE_PRCNT,  5 17, PRCNT ) /* %                      */ COMBO(DE___bad, 10 22, _10_22) // bad
 
                 // row 1+2                        ``~                                                         "'
-                COMBO(DE_TODO_, 14 26, _14_26) /* `` <-                  */ COMBO(DE______, 18 34, _18_34) // free
-                COMBO(DE_GRAVE, 15 27, GRAVE ) /* `                      */ COMBO(DE_TODO_, 19 35, _19_35) // "" <-
-                COMBO(DE_TILDE, 16 28, TILDE ) /* ~                      */ COMBO(DE_TODO_, 20 36, _20_36) // '' <-
-                COMBO(DE______, 17 29, _17_29) /* free                   */ COMBO(DE______, 21 37, _21_37) // free
+                COMBO(DE_TODO_, 14 26, _14_26) /* `` <-                  */ COMBO(DE______, 18 32, _18_32) // free
+                COMBO(DE_GRAVE, 15 27, GRAVE ) /* `                      */ COMBO(DE_TODO_, 19 33, _19_33) // "" <-
+                COMBO(DE_TILDE, 16 28, TILDE ) /* ~                      */ COMBO(DE_TODO_, 20 34, _20_34) // '' <-
+                COMBO(DE______, 17 29, _17_29) /* free                   */ COMBO(DE______, 21 35, _21_35) // free
 
                 // row 0+1 diagonal               !                                                           ?
                 COMBO(DE______, 14  3, _14_3 ) /* free                   */ COMBO(DE______, 18  7, _18_7 ) // free
                 COMBO(DE_EXCL ,  3 16, EXCL  ) /* !                      */ COMBO(DE_QMARK, 19  8, QMARK ) // ?
-                COMBO(DE______,  4 17, _4_17 ) /* free                   */ COMBO(DE______,  8 21, _8_21 )// free
+                COMBO(DE______,  4 17, _4_17 ) /* free                   */ COMBO(DE______,  8 21, _8_21 ) // free
 
                 // row 1+2 diagonal               _                                                           :
-                COMBO(DE______, 26 15, _26_15) /* free                   */ COMBO(DE______, 34 19, _34_19) // free
-                COMBO(DE_UNDER, 15 28, UNDER ) /* _                      */ COMBO(DE_COLON, 35 20, COLON ) // :
-                COMBO(DE______, 16 28, _16_28) /* free                   */ COMBO(DE______, 20 37, _20_37) // free
+                COMBO(DE______, 26 15, _26_15) /* free                   */ COMBO(DE______, 32 19, _32_19) // free
+                COMBO(DE_UNDER, 15 28, UNDER ) /* _                      */ COMBO(DE_COLON, 33 20, COLON ) // :
+                COMBO(DE______, 16 28, _16_28) /* free                   */ COMBO(DE______, 20 35, _20_35) // free
                 //</editor-fold>
         };
 
