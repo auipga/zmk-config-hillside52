@@ -58,7 +58,7 @@
                 COMBO(28, 29, DE______) /* free        */ COMBO(34, 35, DE_GT   ) // >
                 COMBO(26, 28, DE_TODO_) /* {} <-       */ COMBO(33, 35, DE_TODO_) // <> <-
 
-                // row 0/1                 @#$%                                      ^&*\
+                // row 0+1                 @#$%                                      ^&*\
                 COMBO( 1, 13, DE______) /* free        */ COMBO( 6, 18, DE_CARET) // ^ todo*
                 COMBO( 2, 14, DE_AT   ) /* @           */ COMBO( 7, 19, DE_AMPS ) // &
                 COMBO( 3, 15, DE_HASH ) /* #           */ COMBO( 8, 20, DE_STAR ) // *
@@ -73,7 +73,7 @@
 
                 // row 0+1 diagonal        !                                         ?
                 COMBO(14,  3, DE______) /* free        */ COMBO(18,  7, DE______) // free
-                COMBO( 3, 16, DE_EXCL ) /* !           */ COMBO( 8, 19, DE______) // ? todo*
+                COMBO( 3, 16, DE_EXCL ) /* !           */ COMBO(19,  8, DE_QMARK) // ? todo*
                 COMBO( 4, 17, DE______) /* free        */ COMBO( 8, 21, DE______) // free todo*
 
                 // row 1+2 diagonal        _                                         :
