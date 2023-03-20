@@ -73,7 +73,7 @@
 
                 // row 0+1 diagonal        !                                         ?
                 COMBO(14,  3, DE______) /* free        */ COMBO(18,  7, DE______) // free
-                COMBO( 3, 16, DE_EXCL ) /* !           */ COMBO(19,  8, DE_QMARK) // ? todo*
+                COMBO( 3, 16, DE_EXCL ) /* !           */ COMBO(19,  8, DE______) // ? todo*
                 COMBO( 4, 17, DE______) /* free        */ COMBO( 8, 21, DE______) // free todo*
 
                 // row 1+2 diagonal        _                                         :
