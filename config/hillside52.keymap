@@ -28,8 +28,8 @@
         combos {
                 compatible = "zmk,combos";
 
-                COMBO(DE_LBRC ,  2  3, 'LBRC') /* [                      */ COMBO(DE_LPAR ,  7  8, 'LPAR') // (
-                COMBO(DE_RBKT ,  3  4, 'RBKT') /* ]                      */ COMBO(DE_RPAR ,  8  9, 'RPAR') // )
+                COMBO(DE_LBRC ,  2  3, LBRC) /* [                      */ COMBO(DE_LPAR ,  7  8, LPAR) // (
+                COMBO(DE_RBKT ,  3  4, RBKT) /* ]                      */ COMBO(DE_RPAR ,  8  9, RPAR) // )
         }
 
         keymap {
