@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include "outer-keys.h"
+#include "combos.h"
 #include "keymap-german-rev3.h"
 
 #define DVORAK_L 0
@@ -24,6 +25,64 @@
 
 
 / {
+        combos {
+                compatible = "zmk,combos";
+
+                // key numbers
+                //       0   1   2   3   4   5                      6   7   8   9  10  11
+                //      12 [13][14][15][16] 17                     18 [19][20][21][22] 23
+                //      24  25 [26] 27  28  29  30             31  32  33  34 [35] 36  37
+                //      38  39  40     (41) 42  43  44     45  46  47 (48)     49  50  51
+
+                //<editor-fold desc="Kombol Layout 1.1">
+                // see https://github.com/skychil/kombol
+                // todo* = doesn't work yet
+
+                // row 0                   []                                        ()
+                COMBO( 1,  2, DE______) /* free        */ COMBO( 6,  7, DE______) // free
+                COMBO( 2,  3, DE_LBRC ) /* [           */ COMBO( 7,  8, DE_LPAR ) // (
+                COMBO( 3,  4, DE_RBKT ) /* ]           */ COMBO( 8,  9, DE_RPAR ) // )
+                COMBO( 4,  5, DE______) /* free        */ COMBO( 9, 10, DE______) // free
+                COMBO( 2,  4, DE_TODO_) /* [] <-       */ COMBO( 7,  9, DE_TODO_) // () <-
+
+                // row 1                   -=+                                       |"'
+                COMBO(13, 14, DE______) /* free        */ COMBO(18, 19, DE_PIPE ) // |
+                COMBO(14, 15, DE_MINUS) /* -           */ COMBO(19, 20, DE_DQT  ) // "
+                COMBO(15, 16, DE_EQUAL) /* =           */ COMBO(20, 21, DE_SQT  ) // '
+                COMBO(16, 17, DE_PLUS ) /* +           */ COMBO(21, 22, DE______) // free
+                COMBO(14, 16, S(INS)  ) /* Shift+Insert*/ COMBO(19, 21, DE______) // free
+
+                // row 2                   {}                                        <>
+                COMBO(26, 27, DE_LBRC ) /* {           */ COMBO(32, 33, DE______) // free
+                COMBO(27, 28, DE_RBRC ) /* }           */ COMBO(33, 34, DE_LT   ) // <
+                COMBO(28, 29, DE______) /* free        */ COMBO(34, 35, DE_GT   ) // >
+                COMBO(26, 28, DE_TODO_) /* {} <-       */ COMBO(33, 35, DE_TODO_) // <> <-
+
+                // row 0+1                 @#$%                                      ^&*\
+                COMBO( 1, 13, DE______) /* free        */ COMBO( 6, 18, DE_CARET) // ^ todo*
+                COMBO( 2, 14, DE_AT   ) /* @           */ COMBO( 7, 19, DE_AMPS ) // &
+                COMBO( 3, 15, DE_HASH ) /* #           */ COMBO( 8, 20, DE_STAR ) // *
+                COMBO( 4, 16, DE_DLLR ) /* $           */ COMBO( 9, 21, DE_BSLH ) // \
+                COMBO( 5, 17, DE_PRCNT) /* %           */ COMBO(10, 22, DE______) // free todo*
+
+                // row 1+2                 ``~                                       "'
+                COMBO(14, 26, DE_TODO_) /* `` <-       */ COMBO(18, 32, DE______) // free
+                COMBO(15, 27, DE_GRAVE) /* `           */ COMBO(19, 33, DE_TODO_) // "" <-
+                COMBO(16, 28, DE_TILDE) /* ~           */ COMBO(20, 34, DE_TODO_) // '' <-
+                COMBO(17, 29, DE______) /* free        */ COMBO(21, 35, DE______) // free
+
+                // row 0+1 diagonal        !                                         ?
+                COMBO(14,  3, DE______) /* free        */ COMBO(18,  7, DE______) // free
+                COMBO( 3, 16, DE_EXCL ) /* !           */ COMBO(19,  8, DE_QMARK) // ? todo*
+                COMBO( 4, 17, DE______) /* free        */ COMBO( 8, 21, DE______) // free todo*
+
+                // row 1+2 diagonal        _                                         :
+                COMBO(26, 15, DE______) /* free        */ COMBO(32, 19, DE______) // free todo*
+                COMBO(15, 28, DE_UNDER) /* _           */ COMBO(33, 20, DE_COLON) // :
+                COMBO(16, 28, DE______) /* free        */ COMBO(20, 35, DE______) // free todo*
+                //</editor-fold>
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
