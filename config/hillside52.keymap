@@ -35,9 +35,9 @@
                 //                 (40) 41  42 [43] 44     45 [46] 47  48 (49)
 
                 //<editor-fold desc="myrioku style combos">
-                // row 0                          []                                                          ()
-                COMBO(DE_LBRC ,  2  3, LBRC  ) /* [                      */ COMBO(DE_LPAR ,  7  8, LPAR  ) // (
-                COMBO(DE_RBKT ,  3  4, RBKT  ) /* ]                      */ COMBO(DE_RPAR ,  8  9, RPAR  ) // )
+                // row 0                          []
+                COMBO(DE_LBRC ,  2  3, LBRC  ) /* [                      */ COMBO(DE_LPAR ,  7  8, LPAR  )
+                COMBO(DE_RBKT ,  3  4, RBKT  ) /* ]                      */ COMBO(DE_RPAR ,  8  9, RPAR  )
 
                 COMBO(DE______, 13 14, nix )
                 COMBO(DE_PIPE , 18 19, PUP)
