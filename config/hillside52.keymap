@@ -25,6 +25,15 @@
 
 
 / {
+        combos {
+                compatible = "zmk,combos";
+
+                COMBO(DE_LBRC ,  2  3, ) /* [
+                                                                   */ COMBO(DE_LPAR ,  7  8, ) // (
+                COMBO(DE_RBKT ,  3  4, ) /* ]
+                                                                   */ COMBO(DE_RPAR ,  8  9, ) // )
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
