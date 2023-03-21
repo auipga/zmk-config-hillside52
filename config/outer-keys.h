@@ -37,7 +37,7 @@
 #define RTK_2    BSPC // ✔
 #define RTK_3    DEL  // ✔
 //#define RTK_4    R_ENC ✔
-#define RTK_2_1  DE_FSLH
+#define RTK_2_1  DE_Z
 
 
 //----------------------------------------------------------------
@@ -45,7 +45,7 @@
 #define LT_2    &lt NAV_L LTK_2
 #define LT_3    &kp    LTK_3
 #define LT_4    &none   // ENC   LTK_4
-#define LT_2_1  &kp    LTK_2_1
+#define LT_2_1  &tog DK_HRM_L // &kp LTK_2_1 // &lt LTL_2_1  LTK_2_1
 //
 #define RT_1    &kp    RTK_1
 #define RT_2    &lt SYM_L RTK_2

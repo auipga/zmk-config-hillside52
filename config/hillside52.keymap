@@ -13,9 +13,10 @@
 #include "keymap-german-rev3.h"
 
 #define DVORAK_L 0
-#define NAV_L    1
-#define SYM_L    2
-#define ADJ_L    3
+#define DK_HRM_L 1
+#define NAV_L    2
+#define SYM_L    3
+#define ADJ_L    4
 
 #define Undo   LC(Z)
 #define Cut    LC(X)
@@ -25,6 +26,18 @@
 
 
 / {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
         combos {
                 compatible = "zmk,combos";
 
@@ -98,6 +111,17 @@
 LOP_1         &kp  DE_SQT   &kp  DE_COMMA &kp  DE_DOT   &kp  P        &kp  DE_Y                                                                      &kp  F        &kp  G        &kp  C        &kp  R        &kp  L        &kp DE_FSLH
 LOP_2         &kp  A        &kp  O        &kp  E        &kp  U        &kp  I                                                                         &kp  D        &kp  H        &kp  T        &kp  N        &kp  S        &kp DE_MINUS
 LOP_3         &kp  DE_SEMI  &kp  Q        &kp  J        &kp  K        &kp  X        LT_2_1                                             RT_2_1        &kp  B        &kp  M        &kp  W        &kp  V        RAR_0         ROP_3
+LAR_1         LAR_2         LAR_3                       LT_4          LT_3          LT_2           LT_1                  RT_1          RT_2          RT_3          RT_4                        RAR_1         RAR_2         RAR_3
+                        >;
+
+                        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
+                };
+
+                dvorak_hrm_layer {
+                        bindings = <
+LOP_1         &kp  DE_SQT   &kp  DE_COMMA &kp  DE_DOT   &kp  P        &kp  DE_Y                                                                      &kp  F        &kp  G        &kp  C        &kp  R        &kp  L        &kp DE_FSLH
+LOP_2         &hm  LGUI A   &hm  LALT O   &hm  LCTRL E  &hm  LSHIFT U &kp  I                                                                         &kp  D        &hm  LSHIFT H &hm  LCTRL T  &hm  LALT N   &hm  LGUI S   &kp DE_MINUS
+LOP_3         &kp  DE_SEMI  &hm  RALT Q   &kp  J        &kp  K        &kp  X        LT_2_1                                             RT_2_1        &kp  B        &kp  M        &kp  W        &hm  RALT V   RAR_0         ROP_3
 LAR_1         LAR_2         LAR_3                       LT_4          LT_3          LT_2           LT_1                  RT_1          RT_2          RT_3          RT_4                        RAR_1         RAR_2         RAR_3
                         >;
 
