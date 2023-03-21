@@ -41,7 +41,7 @@
 
 
 //----------------------------------------------------------------
-#define LT_1    &kp    LTK_1
+#define LT_1    &lt NUM_L LTK_1
 #define LT_2    &lt NAV_L LTK_2
 #define LT_3    &kp    LTK_3
 #define LT_4    &none   // ENC   LTK_4
