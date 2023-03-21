@@ -40,7 +40,7 @@
 
                 // row 0                   []                                        ()
                 COMBO( 1,  2, DE______) /* free        */ COMBO( 6,  7, DE______) // free
-                COMBO( 2,  3, DE_LBRC ) /* [           */ COMBO( 7,  8, DE_LPAR ) // (
+                COMBO( 2,  3, DE_LBKT ) /* [           */ COMBO( 7,  8, DE_LPAR ) // (
                 COMBO( 3,  4, DE_RBKT ) /* ]           */ COMBO( 8,  9, DE_RPAR ) // )
                 COMBO( 4,  5, DE______) /* free        */ COMBO( 9, 10, DE______) // free
                 COMBO( 2,  4, DE_TODO_) /* [] <-       */ COMBO( 7,  9, DE_TODO_) // () <-
