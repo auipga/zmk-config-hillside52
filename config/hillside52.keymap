@@ -18,8 +18,9 @@
 #define DK_HRM_L 1
 #define NUM_L    2
 #define NAV_L    3
-#define SYM_L    4
-#define ADJ_L    5
+#define PHP_L    4
+#define SYM_L    5
+#define ADJ_L    6
 
 / {
     behaviors {
@@ -152,10 +153,21 @@ LAR_1         LAR_2         LAR_3                       LT_4          LT_3      
 &kp F3      &kp LC(F)       U_SWI_POP           &kp LC(R)            &kp F5            U_ADRBAR                                                     &kp PG_UP   &kp HOME     &kp UP       &kp END    &none    &none
 &kp LS(F3)  &sm LGUI LC(A)  &sm LALT LS(LC(C))  &sm LCTRL LS(LC(V))  &sm LSHIFT SPACE  P_COMENT                                                     &kp PG_DN   &kp LEFT     &kp DOWN     &kp RIGHT  &kp ESC  P_COLAPS
 &none       &kp LC(X)       &kp LC(C)           &kp LC(V)            &kp LC(DE_Z)      &kp LS(LC(DE_Z))  &none                           &none      &kp INSERT  &kp LS(TAB)  &kp DE_FSLH  &kp TAB    RAR_0    P_EXPAND
-&none       &kp LA(J)       &none                                    LT_4              LT_3              &trans  &kp LG(L)    &kp RTK_1  &kp RTK_2  &kp K_APP   RT_4                      RAR_1      RAR_2    RAR_3
+&none       &none           &none                                    LT_4              LT_3              &trans  &kp LG(L)    &kp RTK_1  &kp RTK_2  &kp K_APP   RT_4                      RAR_1      RAR_2    RAR_3
                         >;
 
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp UP DOWN>;
+                };
+
+                phpstorm_layer {
+                        bindings = <
+&none     &none     &none        &none         P_COMENT       &none                                      &none  &none  &none  &none     &none     &none
+&none     &none     &sm LALT P_  &sm LCTRL P_  &sm LSHIFT P_  P_COMENT                                   &none  &none  &none  &none     &none     &none
+&none     &none     P_EXT_S      P_STRPOP      P_SELECT       &none     &none                  &none     &none  &none  &none  &none     P_DIFPRV  &none
+&none     &none     &none                      LT_4           &trans    &none  &none    &none  P_ACTION  &none  RT_4          P_CMPPRV  P_DIFNXT  P_CMPNXT
+                        >;
+
+                        sensor-bindings = <&inc_dec_kp A B &inc_dec_kp DOWN UP>;
                 };
 
                 sym_layer {

@@ -49,5 +49,10 @@
 // git
 /*_*/#define P_GITPOP  &kp LA(DE_PLUS)        // VCS Actions Popup
 
+// Comparison window
+/*_*/#define P_CMPNXT  &kp LA(LS(RIGHT))      // Compare next file
+/*_*/#define P_CMPPRV  &kp LA(LS(LEFT))       // Compare previous file
+/*_*/#define P_DIFNXT  &kp F7                 // Go to next difference
+/*_*/#define P_DIFPRV  &kp LS(F7)             // Go to previous difference
 
 

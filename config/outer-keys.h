@@ -43,7 +43,7 @@
 //----------------------------------------------------------------
 #define LT_1    &lt NUM_L LTK_1
 #define LT_2    &lt NAV_L LTK_2
-#define LT_3    &kp    LTK_3
+#define LT_3    &lt PHP_L LTK_3
 #define LT_4    &none   // ENC   LTK_4
 #define LT_2_1  &tog DK_HRM_L // &kp LTK_2_1 // &lt LTL_2_1  LTK_2_1
 //
