@@ -11,6 +11,8 @@
 #include "outer-keys.h"
 #include "combos.h"
 #include "keymap-german-rev3.h"
+#include "keymap-linux.h"
+#include "keymap-phpstorm.h"
 
 #define DVORAK_L 0
 #define DK_HRM_L 1
@@ -18,14 +20,6 @@
 #define NAV_L    3
 #define SYM_L    4
 #define ADJ_L    5
-
-
-#define Undo   LC(Z)
-#define Cut    LC(X)
-#define Copy   LC(C)
-#define Paste  LC(V)
-#define Redo   LC(Y)
-
 
 / {
     behaviors {
@@ -36,6 +30,15 @@
             tapping-term-ms = <200>;
             quick_tap_ms = <200>;
             flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        sm: slow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SLOW_HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <1000>;
+            quick_tap_ms = <300>;
+            flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
         };
     };
@@ -145,21 +148,14 @@ LAR_1         LAR_2         LAR_3                       LT_4          LT_3      
                 };
 
                 nav_layer {
-/* NAV
- * -------------------------------------------------------------------------------------------------------------------------------------
- * | Copy  |   1   |   2   |   3   |   4   |   5   |-----------------------------------|   6   |   7   |   8   |   9   |   0   | BSPC  |
- * | Cut   |  GUI  |  Alt  | Ctrl  | Shift | Paste |-----------------------------------| PG UP |  Left |  Up   |  Down | Right | PG DN |
- * | Shift |  F1   |  F2   |  F3   |  F4   |  F5   |  UnDo |-------------------| ReDo  |  F6   |  F7   |  F8   |  F9   |  F10  | Shift |
- * | F11   |  F12  |       |-------|       |       |       |       |---| ADJ_L |       |       |       |-------| CTRL  | HOME  |  END  |
- */
                         bindings = <
-&kp  Copy     &kp  N1       &kp  N2       &kp  N3       &kp  N4       &kp  N5                                                                        &kp   N6      &kp  N7      &kp   N8      &kp   N9      &kp  N0       &trans
-&kp  Cut      &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp  LSHFT    &kp  Paste                                                                     &kp   PG_UP   &kp  LEFT    &kp   UP      &kp   DOWN    &kp  RIGHT    &kp PG_DN
-&trans        &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5       &kp Undo                                           &kp  Redo     &kp   F6      &kp  F7      &kp   F8      &kp   F9      &kp  F10      &trans
-&kp  F11      &kp  F12      &trans                      &trans        &trans        &trans        &trans                 &mo ADJ_L     &trans        &trans        &trans                     &kp  RCTRL    &kp  HOME     &kp  END
+&kp F3      &kp LC(F)       U_SWI_POP           &kp LC(R)            &kp F5            U_ADRBAR                                                     &kp PG_UP   &kp HOME     &kp UP       &kp END    &none    &none
+&kp LS(F3)  &sm LGUI LC(A)  &sm LALT LS(LC(C))  &sm LCTRL LS(LC(V))  &sm LSHIFT SPACE  P_COMENT                                                     &kp PG_DN   &kp LEFT     &kp DOWN     &kp RIGHT  &kp ESC  P_COLAPS
+&none       &kp LC(X)       &kp LC(C)           &kp LC(V)            &kp LC(DE_Z)      &kp LS(LC(DE_Z))  &none                           &none      &kp INSERT  &kp LS(TAB)  &kp DE_FSLH  &kp TAB    RAR_0    P_EXPAND
+&none       &kp LA(J)       &none                                    LT_4              LT_3              &trans  &kp LG(L)    &kp RTK_1  &kp RTK_2  &kp K_APP   RT_4                      RAR_1      RAR_2    RAR_3
                         >;
 
-                        sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+                        sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp UP DOWN>;
                 };
 
                 sym_layer {
