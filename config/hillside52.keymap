@@ -21,6 +21,12 @@
 #define PHP_L    4
 #define MED_L    5
 
+&lt {
+    tapping-term-ms = <200>;
+    quick_tap_ms = <300>;
+    flavor = "tap-preferred";
+};
+
 / {
     behaviors {
         hm: homerow_mods {
