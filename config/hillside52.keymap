@@ -105,6 +105,10 @@
                 COMBO(15, 28, DE_UNDER) /* _           */ COMBO(33, 20, DE_COLON) // :
                 COMBO(16, 28, DE______) /* free        */ COMBO(20, 35, DE______) // free todo*
                 //</editor-fold>
+
+                // Other
+                COMBO( 16, 19, CAPS) // both hrm shifts
+                COMBC( 16, 43, &caps_word) // left hrm shift + space
         };
 
         keymap {
