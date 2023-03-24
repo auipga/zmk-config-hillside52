@@ -70,11 +70,12 @@
                 COMBO( 2,  4, DE_TODO_) /* [] <-       */ COMBO( 7,  9, DE_TODO_) // () <-
 
                 // row 1                   -=+                                       |"'
-                COMBO(13, 14, DE______) /* free        */ COMBO(18, 19, DE_PIPE ) // |
-                COMBO(14, 15, DE_MINUS) /* -           */ COMBO(19, 20, DE_DQT  ) // "
-                COMBO(15, 16, DE_EQUAL) /* =           */ COMBO(20, 21, DE_SQT  ) // '
-                COMBO(16, 17, DE_PLUS ) /* +           */ COMBO(21, 22, DE______) // free
-                COMBO(14, 16, S(INS)  ) /* Shift+Insert*/ COMBO(19, 21, DE______) // free
+                // todo beisst sich mit hrm
+                //COMBO(13, 14, DE______) /* free        */ COMBO(18, 19, DE_PIPE ) // |
+                //COMBO(14, 15, DE_MINUS) /* -           */ COMBO(19, 20, DE_DQT  ) // "
+                //COMBO(15, 16, DE_EQUAL) /* =           */ COMBO(20, 21, DE_SQT  ) // '
+                //COMBO(16, 17, DE_PLUS ) /* +           */ COMBO(21, 22, DE______) // free
+                //COMBO(14, 16, S(INS)  ) /* Shift+Insert*/ COMBO(19, 21, DE______) // free
 
                 // row 2                   {}                                        <>
                 COMBO(26, 27, DE_LBRC ) /* {           */ COMBO(32, 33, DE______) // free
