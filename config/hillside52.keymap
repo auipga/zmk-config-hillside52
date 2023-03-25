@@ -63,13 +63,10 @@
                 COMBO(13, 35, DE_AE)
                 COMBO(14, 35, DE_OE)
                 COMBO(16, 35, DE_UE)
-              //COMBO(22, 35, DE_SS)
 
-                // Umlauts with Alt on left half
-              //COMBO(13, 26, DE_AE)
-              //COMBO(14, 26, DE_OE)
-              //COMBO(16, 26, DE_UE)
+                // ß with AltGr
                 COMBO(22, 26, DE_SS)
+                COMBO(22, 35, DE_SS)
                 //</editor-fold>
 
                 // Other
