@@ -72,6 +72,7 @@
                 // Other
                 COMBO( 16, 19, CAPS) // both hrm shifts
                 COMBC( 16, 43, &caps_word) // left hrm shift + space
+                COMBC( 17, 18, &tog DVORAK_L)
         };
 
         keymap {
