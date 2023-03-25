@@ -48,7 +48,7 @@
 #define LT_2_1  &kp    LTK_2_1 // &lt LTL_2_1  LTK_2_1
 //
 #define RT_1    &kp    RTK_1
-#define RT_2    &kp    RTK_2
+#define RT_2    &lt SYM_L RTK_2
 #define RT_3    &kp    RTK_3
 #define RT_4    &none   // ENC   RTK_4
 #define RT_2_1  &kp    RTK_2_1
