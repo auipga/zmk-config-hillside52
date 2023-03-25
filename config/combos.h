@@ -3,7 +3,7 @@
     combo_##KEYPOS1##_##KEYPOS2 { \
         timeout-ms = <40>; \
         key-positions = <KEYPOS1 KEYPOS2>; \
-        layers = <DVORAK_L DK_HRM_L NUM_L>; \
+        layers = <DK_HRM_L DVORAK_L NUM_L>; \
         bindings = <&kp KP>; \
     };
 
@@ -12,6 +12,6 @@
     combo_##KEYPOS1##_##KEYPOS2 { \
         timeout-ms = <40>; \
         key-positions = <KEYPOS1 KEYPOS2>; \
-        layers = <DVORAK_L DK_HRM_L>; \
+        layers = <DK_HRM_L DVORAK_L>; \
         bindings = <BINDING>; \
     };
