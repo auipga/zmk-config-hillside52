@@ -134,7 +134,7 @@ LOP_3    &kp LC(A)       &kp LS(LC(C))  &kp LS(LC(V))   &kp LS(LC(DE_Z))     &no
 &none     &none     &none                      LT_4           &trans    &none  &none    &none  P_ACTION  &none  RT_4          P_CMPPRV  P_DIFNXT  P_CMPNXT
                         >;
 
-                        sensor-bindings = <&inc_dec_kp A B &inc_dec_kp DOWN UP>;
+                        sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp DOWN UP>;
                 };
 
                 media_layer {
