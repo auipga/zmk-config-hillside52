@@ -87,7 +87,7 @@ LOP_3         &kp  DE_SEMI  &hm  RALT Q   &kp  J        &kp  K        &kp  X    
 LAR_1         LAR_2         LAR_3                       LT_4          LT_3          LT_2          LT_1                  RT_1          RT_2          RT_3          RT_4                        RAR_1         RAR_2         RAR_3
                         >;
 
-                        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
+                        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp P_ P_>;
                 };
 
                 dvorak_layer {
@@ -97,8 +97,6 @@ LOP_2         &kp  A        &kp  O        &kp  E        &kp  U        &kp  I    
 LOP_3         &kp  DE_SEMI  &kp  Q        &kp  J        &kp  K        &kp  X        LT_2_1                                            RT_2_1        &kp  B        &kp  M        &kp  W        &kp  V        RAR_0         ROP_3
 LAR_1         LAR_2         LAR_3                       LT_4          LT_3          LT_2          LT_1                  RT_1          RT_2          RT_3          RT_4                        RAR_1         RAR_2         RAR_3
                         >;
-
-                        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
                 };
 
                 numbers_layer {
@@ -112,8 +110,6 @@ LAR_1         LAR_2         LAR_3                       LT_4          LT_3      
 &trans     &kp KP_MULTIPLY  &kp KP_DIVIDE &kp KP_MINUS  &kp KP_PLUS   &kp DE_COMMA  &none                                             &none         &kp PERCENT   &kp KP_N1     &kp KP_N2     &kp KP_N3     RAR_0         &none
 &trans     &trans           &trans                      &trans        &trans        &kp K_CALC    &trans                &trans        &trans        &kp KP_N0     &trans                      RAR_1         RAR_2         RAR_3
                         >;
-
-                        sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp LEFT RIGHT>;
                 };
 
                 nav_layer {
@@ -123,8 +119,6 @@ LOP_2    &sm LGUI LC(X)  &sm LALT LC(C) &sm LCTRL LC(V) &sm LSHIFT LC(DE_Z)  P_C
 LOP_3    &kp LC(A)       &kp LS(LC(C))  &kp LS(LC(V))   &kp LS(LC(DE_Z))     &none      &none                                         &none         &kp INSERT    &kp LS(TAB)   &kp DE_FSLH   &kp TAB       RAR_0         P_EXPAND
 &none    &none           &none                          LT_4                 LT_3       &trans    &kp LG(L)             &kp RTK_1     &kp RTK_2     &kp K_APP     RT_4                        RAR_1         RAR_2         RAR_3
                         >;
-
-                        sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp UP DOWN>;
                 };
 
                 phpstorm_layer {
@@ -134,8 +128,6 @@ LOP_3    &kp LC(A)       &kp LS(LC(C))  &kp LS(LC(V))   &kp LS(LC(DE_Z))     &no
 &none     &none     P_EXT_S      P_STRPOP      P_SELECT       &none     &none                  &none     &none  &none  &none  &none     P_DIFPRV  &none
 &none     &none     &none                      LT_4           &trans    &none  &none    &none  P_ACTION  &none  RT_4          P_CMPPRV  P_DIFNXT  P_CMPNXT
                         >;
-
-                        sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp DOWN UP>;
                 };
 
                 media_layer {
@@ -146,7 +138,7 @@ LOP_3    &kp LC(A)       &kp LS(LC(C))  &kp LS(LC(V))   &kp LS(LC(DE_Z))     &no
 LAR_1       LAR_2      &trans                      LT_4          &none          &reset       &none    &none  &reset        &none  RT_4          &kp K_PREV  YT_SLOWER  &kp K_NEXT
                         >;
 
-                        sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp U_BRI_DN U_BRI_UP>;
+                        sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp P_ P_>;
                 };
 
                 symbols_layer {
@@ -156,6 +148,8 @@ LOP_2         &kp DE_SEMI   &kp DE_COLON  &kp DE_MINUS  &kp DE_DLLR   &kp DE_PLU
 LOP_3         &kp DE_HASH   &kp DE_LBRC   &kp DE_RBRC   &kp DE_EQUAL  &kp DE_TILDE  &none                                             &none         &kp DE_EXCL   &kp DE_LBKT   &kp DE_RBKT   &kp DE_SQT    &kp DE_UNDER  &none
 LAR_1         LAR_2         LAR_3                       LT_4          &kp BSPC      LT_2          LT_1                  &none         &trans        &none         RT_4                        &none         &none         &none
                         >;
+
+                        sensor-bindings = <&inc_dec_kp U_BRI_DN U_BRI_UP &inc_dec_kp P_ P_>;
                 };
         };
 };
