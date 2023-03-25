@@ -4,7 +4,7 @@
 
 // Left Outer Pinky
 #define LOP_1   &kp ESC
-#define LOP_2   &kp LSHFT
+#define LOP_2   &hm LSHFT TAB // ✔
 #define LOP_3   &kp LCTRL
 
 // Right Outer Pinky (1 and 2 are already defined by the keymap)
