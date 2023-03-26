@@ -123,10 +123,10 @@ LOP_3    &kp LC(A)       &kp LS(LC(C))  &kp LS(LC(V))   &kp LS(LC(DE_Z))     &no
 
                 phpstorm_layer {
                         bindings = <
-&none     &none     &none        &none         P_COMENT       &none                                      &none  &none  &none  &none     &none     &none
-&none     &none     &sm LALT P_  &sm LCTRL P_  &sm LSHIFT P_  P_COMENT                                   &none  &none  &none  &none     &none     &none
-&none     &none     P_EXT_S      P_STRPOP      P_SELECT       &none     &none                  &none     &none  &none  &none  &none     P_DIFPRV  &none
-&none     &none     &none                      LT_4           &trans    &none  &none    &none  P_ACTION  &none  RT_4          P_CMPPRV  P_DIFNXT  P_CMPNXT
+&none     &none     &none              &none         P_COMENT       &none                                      &none  &none  &none  &none     &none     &none
+&none     &none     &sm LALT P_CLPCMP  &sm LCTRL P_  &sm LSHIFT P_  P_COMENT                                   &none  &none  &none  &none     &none     &none
+&none     &none     P_EXT_S            P_STRPOP      P_SELECT       &none     &none                  &none     &none  &none  &none  &none     P_DIFPRV  &none
+&none     &none     &none                            LT_4           &trans    &none  &none    &none  P_ACTION  &none  RT_4          P_CMPPRV  P_DIFNXT  P_CMPNXT
                         >;
                 };
 
