@@ -26,7 +26,7 @@
 
 
 // Left Thumb Keys
-#define LTK_1    TAB   //
+#define LTK_1    RET   // ✔
 #define LTK_2    SPACE // ✔
 #define LTK_3    ESC   // LALT
 //#define LTK_4    L_ENC ✔ LGUI
