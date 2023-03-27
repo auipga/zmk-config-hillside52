@@ -157,7 +157,7 @@ LAR_1         LAR_2         LAR_3                       LT_4          &kp BSPC  
                         bindings = <
 &none         &none         &none         &none         &none         &none                                                                         &none         &kp F7        &kp F8        &kp F9        &kp F10       &none
 &none         &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHIFT    &none                                                                         &kp PSCRN     &kp F4        &kp F5        &kp F6        &kp F11       &none
-&none         &none         &none         &none         &none         &none         &none                                             &none         &kp LC(LS(PSCRN))  &kp F1   &kp F2        &kp F3        &kp F12       &none
+&none         &none         &none         &none         &none         &none         &none                                             &none         &kp LS(PSCRN)  &kp F1       &kp F2        &kp F3        &kp F12       &none
 &none         &none         &none                       LT_4          &kp BSPC      LT_2          LT_1                  &none         &none         &trans        RT_4                        &none         &none         &none
                         >;
 
