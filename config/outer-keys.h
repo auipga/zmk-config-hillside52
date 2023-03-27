@@ -3,7 +3,7 @@
 */
 
 // Left Outer Pinky
-#define LOP_1   &kp ESC
+#define LOP_1   &kp ESC       // ✔
 #define LOP_2   &hm LSHFT TAB // ✔
 #define LOP_3   &kp LCTRL
 
@@ -15,7 +15,7 @@
 
 // Left Arrow Area
 #define LAR_1   &kp C_MUTE
-#define LAR_2   &kp ESC     // ✔
+#define LAR_2   &kp ESC
 #define LAR_3   &lt MED_L K_PP
 
 // Right Arrow Area ✔
@@ -28,27 +28,42 @@
 // Left Thumb Keys
 #define LTK_1    RET   // ✔
 #define LTK_2    SPACE // ✔
-#define LTK_3    ESC   // LALT
-//#define LTK_4    L_ENC ✔ LGUI
+#define LTK_3    ESC   // todo
+//#define LTK_4    L_ENC  ✔
 #define LTK_2_1  P_
 
 // Right Thumb Keys
-#define RTK_1    RET  // ✔
-#define RTK_2    BSPC // ✔
-#define RTK_3    DEL  // ✔
-//#define RTK_4    R_ENC ✔
+#define RTK_1    RET   // ✔
+#define RTK_2    BSPC  // ✔
+#define RTK_3    DEL   // ✔
+//#define RTK_4    R_ENC  ✔
 #define RTK_2_1  P_
 
 
+// Left Thumb Layer switching
+#define LTL_1    NUM_L  // ✔
+#define LTL_2    NAV_L  // ✔
+#define LTL_3    PHP_L  // ✔
+//#define LTL_4    L_ENC   ✔
+//#define LTL_2_1  L_DISPL ✔
+
+// Right Thumb Layer switching
+//#define RTL_1    EDIT_L // todo
+#define RTL_2    SYM_L  // ✔
+#define RTL_3    FUN_L  // ✔
+//#define RTL_4    R_ENC   ✔
+//#define RTL_2_1  R_TRKPD ✔
+
+
 //----------------------------------------------------------------
-#define LT_1    &lt NUM_L LTK_1
-#define LT_2    &lt NAV_L LTK_2
-#define LT_3    &lt PHP_L LTK_3
-#define LT_4    &none   // ENC   LTK_4
-#define LT_2_1  &kp    LTK_2_1 // &lt LTL_2_1  LTK_2_1
+#define LT_1    &lt LTL_1    LTK_1
+#define LT_2    &lt LTL_2    LTK_2
+#define LT_3    &lt LTL_3    LTK_3
+#define LT_4    &none        // ENC
+#define LT_2_1  &kp          LTK_2_1
 //
-#define RT_1    &kp    RTK_1
-#define RT_2    &lt SYM_L RTK_2
-#define RT_3    &lt FUN_L RTK_3
-#define RT_4    &none   // ENC   RTK_4
-#define RT_2_1  &kp    RTK_2_1
+#define RT_1    &kp          RTK_1
+#define RT_2    &lt RTL_2    RTK_2
+#define RT_3    &lt RTL_3    RTK_3
+#define RT_4    &none        // ENC
+#define RT_2_1  &kp          RTK_2_1
