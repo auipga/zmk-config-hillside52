@@ -37,7 +37,7 @@
 #define RTK_2    BSPC  // ✔
 #define RTK_3    DEL   // ✔
 //#define RTK_4    R_ENC  ✔
-#define RTK_2_1  P_
+#define RTK_2_1  U_SYSMON
 
 
 // Left Thumb Layer switching

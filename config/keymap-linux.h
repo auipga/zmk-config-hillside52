@@ -10,5 +10,6 @@
 // gnome
 #define U_CONSOL  &kp LG(T)         // gnome-terminal
 #define U_ADRBAR  &kp LC(L)         // focus address bar (Firefox, Nautilus)
+#define U_SYSMON  LC(LS(ESC))       // gnome-system-monitor
 #define U_BRI_UP  LG(LC(UP))        // bash -c "ddcutil setvcp 10 +10"
 #define U_BRI_DN  LG(LC(DOWN))      // bash -c "ddcutil setvcp 10 -10"
