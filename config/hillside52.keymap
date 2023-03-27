@@ -133,10 +133,10 @@ LOP_3    &kp LC(A)       &kp LS(LC(C))  &kp LS(LC(V))   &kp LS(LC(DE_Z))     &no
 
                 media_layer {
                         bindings = <
-&kp K_NEXT  YT_FASTER  &kp PRINTSCREEN     U_DARK  &bt BT_SEL 0  &out OUT_USB                                              &none  &none  &none  &none       &none      &none
-&kp K_PREV  YT_SLOWER  &kp LC(LS(PSCRN))   U_ZOOM  &bt BT_SEL 1  &out OUT_BLE                                              &none  &none  &none  &none       &none      &none
-&kp F       &kp M      &kp PRINTSCREEN     &none   &bt BT_SEL 2  &bt BT_CLR     &bootloader                  &bootloader   &none  &none  &none  &none       YT_FASTER  &none
-LAR_1       LAR_2      &trans                      LT_4          &none          &reset       &none    &none  &reset        &none  RT_4          &kp K_PREV  YT_SLOWER  &kp K_NEXT
+&kp K_NEXT  YT_FASTER  &kp PRINTSCREEN  U_DARK  &bt BT_SEL 0  &out OUT_USB                                              &none  &none  &none  &none       &none      &none
+&kp K_PREV  YT_SLOWER  &kp LS(PSCRN)    U_ZOOM  &bt BT_SEL 1  &out OUT_BLE                                              &none  &none  &none  &none       &none      &none
+&kp F       &kp M      &kp PRINTSCREEN  &none   &bt BT_SEL 2  &bt BT_CLR     &bootloader                  &bootloader   &none  &none  &none  &none       YT_FASTER  &none
+LAR_1       LAR_2      &trans                   LT_4          &none          &reset       &none    &none  &reset        &none  RT_4          &kp K_PREV  YT_SLOWER  &kp K_NEXT
                         >;
 
                         sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp P_ P_>;
