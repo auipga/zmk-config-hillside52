@@ -30,14 +30,14 @@
 #define LTK_2    SPACE // ✔
 #define LTK_3    ESC   // LALT
 //#define LTK_4    L_ENC ✔ LGUI
-#define LTK_2_1  DE_Z
+#define LTK_2_1  P_
 
 // Right Thumb Keys
 #define RTK_1    RET  // ✔
 #define RTK_2    BSPC // ✔
 #define RTK_3    DEL  // ✔
 //#define RTK_4    R_ENC ✔
-#define RTK_2_1  DE_Z
+#define RTK_2_1  P_
 
 
 //----------------------------------------------------------------
