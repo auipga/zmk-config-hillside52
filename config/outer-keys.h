@@ -70,13 +70,13 @@
 // Left Thumb Layer switching
 #define LTL_1    NUM_L  // ✔
 #define LTL_2    NAV_L  // ✔
-#define LTL_3    SYM_L  //
+#define LTL_3    PHP_L  //
 //#define LTL_4    L_ENC   ✔
 //#define LTL_2_1  L_DISPL ✔
 
 // Right Thumb Layer switching
-#define RTL_1    PHP_L  //
-#define RTL_2    NAV_L  // EDIT_L
+#define RTL_1    SYM_L  //
+#define RTL_2    SYM_L  // EDIT_L
 #define RTL_3    FUN_L  // ✔
 //#define RTL_4    R_ENC   ✔
 //#define RTL_2_1  R_TRKPD ✔
