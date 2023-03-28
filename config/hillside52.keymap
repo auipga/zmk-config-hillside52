@@ -99,7 +99,7 @@
 LOP_1         &kp  DE_SQT   &kp  DE_COMMA &kp  DE_DOT   &kp  P        &kp  DE_Y                                                                     &kp  F        &kp  G        &kp  C        &kp  R        &kp  L        &kp DE_FSLH
 LOP_2         &hm  LGUI A   &hm  LALT O   &hm  LCTRL E  &hm  LSHIFT U &kp  I                                                                        &kp  D        &hm  LSHIFT H &hm  LCTRL T  &hm  LALT N   &hm  LGUI S   &kp DE_MINUS
 LOP_3         &kp  DE_SEMI  &hm  RALT Q   &kp  J        &kp  K        &kp  X        LT_2_1                                            RT_2_1        &kp  B        &kp  M        &kp  W        &hm  RALT V   &kp DE_Z      ROP_3
-LAR_1         LAR_2         LAR_3                       LT_4          LT_3          LT_2          LT_1                  RT_1          RT_2          RT_3          RT_4                        RAR_1         RAR_2         RAR_3
+LAR_1         LAR_2         LAR_3                       L_ENC         LT_3          LT_2          LT_1                  RT_1          RT_2          RT_3          R_ENC                       RAR_1         RAR_2         RAR_3
                         >;
 
                         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp P_ P_>;
@@ -110,7 +110,7 @@ LAR_1         LAR_2         LAR_3                       LT_4          LT_3      
 LOP_1         &kp  DE_SQT   &kp  DE_COMMA &kp  DE_DOT   &kp  P        &kp  DE_Y                                                                     &kp  F        &kp  G        &kp  C        &kp  R        &kp  L        &kp DE_FSLH
 LOP_2         &kp  A        &kp  O        &kp  E        &kp  U        &kp  I                                                                        &kp  D        &kp  H        &kp  T        &kp  N        &kp  S        &kp DE_MINUS
 LOP_3         &kp  DE_SEMI  &kp  Q        &kp  J        &kp  K        &kp  X        LT_2_1                                            RT_2_1        &kp  B        &kp  M        &kp  W        &kp  V        &kp DE_Z      ROP_3
-LAR_1         LAR_2         LAR_3                       LT_4          LT_3          LT_2          LT_1                  RT_1          RT_2          RT_3          RT_4                        RAR_1         RAR_2         RAR_3
+LAR_1         LAR_2         LAR_3                       L_ENC         LT_3          LT_2          LT_1                  RT_1          RT_2          RT_3          R_ENC                       RAR_1         RAR_2         RAR_3
                         >;
                 };
 
@@ -123,7 +123,7 @@ LAR_1         LAR_2         LAR_3                       LT_4          LT_3      
 &trans     &kp LS(TAB)      &kp TAB       &kp DE_LPAR   &kp DE_RPAR   &kp DE_COLON                                                                  &kp KP_NUM    &kp KP_N7     &kp KP_N8     &kp KP_N9     &none         &none
 &trans     &kp LGUI         &kp LALT      &kp LCTRL     &kp LSHIFT    &kp DE_DOT                                                                    &kp DE_EQUAL  &kp KP_N4     &kp KP_N5     &kp KP_N6     &none         &none
 &trans     &kp KP_MULTIPLY  &kp KP_DIVIDE &kp KP_MINUS  &kp KP_PLUS   &kp DE_COMMA  &none                                             &none         &kp PERCENT   &kp KP_N1     &kp KP_N2     &kp KP_N3     RAR_0         &none
-&trans     &trans           &trans                      &trans        &trans        &kp K_CALC    &trans                &kp DE_COLON  &kp DE_DOT    &kp KP_N0     &trans                      RAR_1         RAR_2         RAR_3
+&trans     &trans           &trans                      L_ENC         &trans        &kp K_CALC    &trans                &kp DE_COLON  &kp DE_DOT    &kp KP_N0     R_ENC                       RAR_1         RAR_2         RAR_3
                         >;
                 };
 
@@ -132,7 +132,7 @@ LAR_1         LAR_2         LAR_3                       LT_4          LT_3      
 LOP_1    &kp LC(F)       U_SWI_POP      &kp LC(R)       &kp F5               U_ADRBAR                                                               &kp PG_UP     &kp HOME      &kp UP        &kp END       &none         &none
 LOP_2    &sm LGUI LC(X)  &sm LALT LC(C) &sm LCTRL LC(V) &sm LSHIFT LC(DE_Z)  P_COMENT                                                               &kp PG_DN     &kp LEFT      &kp DOWN      &kp RIGHT     &kp ESC       P_COLAPS
 LOP_3    &kp LC(A)       &kp LS(LC(C))  &kp LS(LC(V))   &kp LS(LC(DE_Z))     &none      &none                                         &none         &kp INSERT    &kp LS(TAB)   &kp DE_FSLH   &kp TAB       RAR_0         P_EXPAND
-&none    &none           &none                          LT_4                 LT_3       &trans    &kp LG(L)             &kp RTK_1     &kp RTK_2     &kp K_APP     RT_4                        RAR_1         RAR_2         RAR_3
+&none    &none           &none                          L_ENC                LT_3       &trans    &kp LG(L)             &kp RTK_1     &kp RTK_2     &kp K_APP     R_ENC                       RAR_1         RAR_2         RAR_3
                         >;
                 };
 
@@ -141,7 +141,7 @@ LOP_3    &kp LC(A)       &kp LS(LC(C))  &kp LS(LC(V))   &kp LS(LC(DE_Z))     &no
 &none     &none     &none              &none         P_COMENT       &none                                      &none  &none  &none  &none     &none     &none
 &none     &none     &sm LALT LA(LS(D)) &sm LCTRL P_  &sm LSHIFT P_  P_COMENT                                   &none  &none  &none  &none     &none     &none
 &none     &none     P_EXT_S            P_STRPOP      P_SELECT       &none     &none                  &none     &none  &none  &none  &none     P_DIFPRV  &none
-&none     &none     &none                            LT_4           &trans    &none  &none    &none  P_ACTION  &none  RT_4          P_CMPPRV  P_DIFNXT  P_CMPNXT
+&none     &none     &none                            L_ENC          &trans    &none  &none    &none  P_ACTION  &none  R_ENC         P_CMPPRV  P_DIFNXT  P_CMPNXT
                         >;
                 };
 
@@ -150,7 +150,7 @@ LOP_3    &kp LC(A)       &kp LS(LC(C))  &kp LS(LC(V))   &kp LS(LC(DE_Z))     &no
 &kp K_NEXT  YT_FASTER  &kp PRINTSCREEN  U_DARK  &bt BT_SEL 0  &out OUT_USB                                              &none  &none  &none  &none       &none      &none
 &kp K_PREV  YT_SLOWER  &kp LS(PSCRN)    U_ZOOM  &bt BT_SEL 1  &out OUT_BLE                                              &none  &none  &none  &none       &none      &none
 &kp F       &kp M      &kp PRINTSCREEN  &none   &bt BT_SEL 2  &bt BT_CLR     &bootloader                  &bootloader   &none  &none  &none  &none       YT_FASTER  &none
-LAR_1       LAR_2      &trans                   LT_4          &none          &reset       &none    &none  &reset        &none  RT_4          &kp K_PREV  YT_SLOWER  &kp K_NEXT
+LAR_1       LAR_2      &trans                   L_ENC         &none          &reset       &none    &none  &reset        &none  R_ENC         &kp K_PREV  YT_SLOWER  &kp K_NEXT
                         >;
 
                         sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp P_ P_>;
@@ -164,7 +164,7 @@ LAR_1       LAR_2      &trans                   LT_4          &none          &re
 LOP_1         &kp DE_CARET  &kp DE_AT     &kp DE_STAR   &kp DE_LBRC   &kp DE_RBRC                                                                   &kp DE_TILDE  &kp DE_LT     &kp DE_GT     &kp DE_FSLH   &kp DE_PRCNT  &kp BSPC
 LOP_2         &kp DE_EURO   &kp DE_DLLR   &kp DE_COLON  &kp DE_EQUAL  &kp DE_QMARK                                                                  &kp DE_EXCL   &kp DE_LPAR   &kp DE_RPAR   &kp DE_DQT    &kp DE_SEMI   &none
 LOP_3         &kp DE_MINUS  &kp DE_PLUS   &kp DE_PIPE   &kp DE_AMPS   &kp DE_BSLH   &none                                             &none         &kp DE_UNDER  &kp DE_LBKT   &kp DE_RBKT   &kp DE_SQT    &kp DE_HASH   &none
-LAR_1         LAR_2         LAR_3                       LT_4          &kp BSPC      LT_2      &kp BSPC                  &none         &trans        &none         RT_4                        &none         &none         &none
+LAR_1         LAR_2         LAR_3                       L_ENC         &kp BSPC      LT_2      &kp BSPC                  &none         &trans        &none         R_ENC                       &none         &none         &none
                         >;
 
                         sensor-bindings = <&inc_dec_kp U_BRI_DN U_BRI_UP &inc_dec_kp P_ P_>;
@@ -175,7 +175,7 @@ LAR_1         LAR_2         LAR_3                       LT_4          &kp BSPC  
 &none         &none         &none         &none         &none         &none                                                                         &none         &kp F7        &kp F8        &kp F9        &kp F10       &none
 &none         &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHIFT    &none                                                                         &kp PSCRN     &kp F4        &kp F5        &kp F6        &kp F11       &none
 &none         &none         &none         &none         &none         &none         &none                                             &none         &kp LS(PSCRN)  &kp F1       &kp F2        &kp F3        &kp F12       &none
-&none         &none         &none                       LT_4          &kp BSPC      LT_2          LT_1                  &none         &none         &trans        RT_4                        &none         &none         &none
+&none         &none         &none                       L_ENC         &kp BSPC      LT_2          LT_1                  &none         &none         &trans        R_ENC                       &none         &none         &none
                         >;
 
                         sensor-bindings = <&inc_dec_kp U_BRI_DN U_BRI_UP &inc_dec_kp P_ P_>;
