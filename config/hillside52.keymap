@@ -80,6 +80,11 @@
                 COMBO(22, 35, DE_SS)
                 //</editor-fold>
 
+                // for PHP coding:
+                COMBC( 3,  4, &php_oo ) /* `->`         */ COMBC( 7,  8, &php_dao) // `=>`
+                COMBO(27, 28, DE_DLLR ) /* $            */ COMBO(33, 34, DE_EQUAL) // =
+                COMBC(28, 29, &php_ed ) /* ` = $`       */
+
                 // Other
                 COMBO( 16, 19, CAPS) // both hrm shifts
                 COMBC( 16, 43, &caps_word) // left hrm shift + space
