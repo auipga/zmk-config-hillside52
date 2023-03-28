@@ -1,5 +1,3 @@
-/*X*/#define P_ SPACE // temp
-
 // menus: needs arrows, ent, esc
 /*l*/#define P_STRPOP  &kp LA(M)            // string manipulation popup
 /*l*/#define P_DIFPOP  &kp LC(LS(D))        // popup: most commonly used diff commands in differences-viewer

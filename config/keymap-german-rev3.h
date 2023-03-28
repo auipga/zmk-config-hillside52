@@ -54,7 +54,7 @@
 // fix most common mistake
 #define ENT RET
 
-// other names for trans & none
-#define DE______ SPACE
-#define DE___bad SPACE
-#define DE_TODO_ SPACE
+// more seeable aliases
+#define XXX &none
+#define ___ &trans
+#define P_  SPACE // temp
