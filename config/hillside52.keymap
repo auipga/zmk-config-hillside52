@@ -144,10 +144,13 @@ LAR_1       LAR_2      &trans                   LT_4          &none          &re
 
                 symbols_layer {
                         bindings = <
-LOP_1         &kp DE_CARET  &kp DE_PIPE   &kp DE_AMPS   &kp DE_STAR   &kp DE_PRCNT                                                                  &kp DE_BSLH   &kp DE_LT     &kp DE_GT     &kp DE_FSLH   &kp DE_AT     &kp BSPC
-LOP_2         &kp DE_SEMI   &kp DE_COLON  &kp DE_MINUS  &kp DE_DLLR   &kp DE_PLUS                                                                   &kp DE_QMARK  &kp DE_LPAR   &kp DE_RPAR   &kp DE_DQT    &kp DE_FSLH   &none
-LOP_3         &kp DE_HASH   &kp DE_LBRC   &kp DE_RBRC   &kp DE_EQUAL  &kp DE_TILDE  &none                                             &none         &kp DE_EXCL   &kp DE_LBKT   &kp DE_RBKT   &kp DE_SQT    &kp DE_UNDER  &none
-LAR_1         LAR_2         LAR_3                       LT_4          &kp BSPC      LT_2          LT_1                  &none         &trans        &none         RT_4                        &none         &none         &none
+                        // ^@*{}   ~<>/%
+                        // €$:=?   !()";
+                        // -+|&\   _[]'#
+LOP_1         &kp DE_CARET  &kp DE_AT     &kp DE_STAR   &kp DE_LBRC   &kp DE_RBRC                                                                   &kp DE_TILDE  &kp DE_LT     &kp DE_GT     &kp DE_FSLH   &kp DE_PRCNT  &kp BSPC
+LOP_2         &kp DE_EURO   &kp DE_DLLR   &kp DE_COLON  &kp DE_EQUAL  &kp DE_QMARK                                                                  &kp DE_EXCL   &kp DE_LPAR   &kp DE_RPAR   &kp DE_DQT    &kp DE_SEMI   &none
+LOP_3         &kp DE_MINUS  &kp DE_PLUS   &kp DE_PIPE   &kp DE_AMPS   &kp DE_BSLH   &none                                             &none         &kp DE_UNDER  &kp DE_LBKT   &kp DE_RBKT   &kp DE_SQT    &kp DE_HASH   &none
+LAR_1         LAR_2         LAR_3                       LT_4          &kp BSPC      LT_2      &kp BSPC                  &none         &trans        &none         RT_4                        &none         &none         &none
                         >;
 
                         sensor-bindings = <&inc_dec_kp U_BRI_DN U_BRI_UP &inc_dec_kp P_ P_>;
