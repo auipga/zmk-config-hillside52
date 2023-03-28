@@ -53,17 +53,11 @@
 
     macros {
         // '->' object operator
-        ZMK_MACRO(php_oo,
-            bindings = <&kp DE_MINUS &kp DE_GT>;
-        )
+        ZMK_MACRO(php_oo,    bindings = <&kp DE_MINUS  &kp DE_GT>; )
         // ' => ' double arrow operator
-        ZMK_MACRO(php_dao,
-            bindings = <&kp SPACE &kp DE_EQUAL &kp DE_GT &kp SPACE>;
-        )
+        ZMK_MACRO(php_dao,   bindings = <&kp SPACE     &kp DE_EQUAL  &kp DE_GT     &kp SPACE>; )
         // ' = $' space equal space dollar
-        ZMK_MACRO(php_ed,
-            bindings = <&kp SPACE &kp DE_EQUAL &kp SPACE &kp DE_DLLR>;
-        )
+        ZMK_MACRO(php_ed,    bindings = <&kp SPACE     &kp DE_EQUAL  &kp SPACE     &kp DE_DLLR>; )
     };
 
         combos {
