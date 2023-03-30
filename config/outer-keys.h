@@ -93,4 +93,4 @@
 #define RT_2    &lt RTL_2    RTK_2
 #define RT_3    &lt RTL_3    RTK_3
 #define R_ENC   &none
-#define RT_2_1  &kp          RTK_2_1
+#define RT_2_1               RTK_2_1
