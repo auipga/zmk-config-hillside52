@@ -49,15 +49,26 @@
             flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
         };
+        TD_a: tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_A";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <U_SYSMON>, <&a1>, <&a2>;
+        };
     };
 
     macros {
         // '->' object operator
-        ZMK_MACRO(php_oo,    bindings = <&kp DE_MINUS  &kp DE_GT>; )
+        ZMK_MACRO(php_oo,    bindings = <&kp DE_MINUS  &kp DE_GT     >; )
         // ' => ' double arrow operator
-        ZMK_MACRO(php_dao,   bindings = <&kp SPACE     &kp DE_EQUAL  &kp DE_GT     &kp SPACE>; )
+        ZMK_MACRO(php_dao,   bindings = <&kp SPACE     &kp DE_EQUAL  &kp DE_GT     &kp SPACE     >; )
         // ' = $' space equal space dollar
-        ZMK_MACRO(php_ed,    bindings = <&kp SPACE     &kp DE_EQUAL  &kp SPACE     &kp DE_DLLR>; )
+        ZMK_MACRO(php_ed,    bindings = <&kp SPACE     &kp DE_EQUAL  &kp SPACE     &kp DE_DLLR   >; )
+
+        // other stuff
+        ZMK_MACRO(a1,        bindings = <&kp A         &kp RET       >; )
+        ZMK_MACRO(a2,        bindings = <&kp RET       &kp A         &kp RET       >; )
     };
 
         combos {
