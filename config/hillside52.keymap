@@ -104,7 +104,7 @@
                 COMBC(28, 29, &php_ed ) /* ` = $`       */
 
                 // Other
-                COMBO( 16, 19, &capsing) // both hrm shifts, 1st caps_word, 2nd CAPS
+                COMBC( 16, 19, &capsing) // both hrm shifts, 1st caps_word, 2nd CAPS
                 COMBC( 17, 18, &tog DVORAK_L)
         };
 
