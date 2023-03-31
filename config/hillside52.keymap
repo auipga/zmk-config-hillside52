@@ -56,6 +56,13 @@
             tapping-term-ms = <500>;
             bindings = <&kp U_SYSMON>, <&a1>, <&a2>;
         };
+        capsing: tap_dance_caps_word_caps_lock {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_CAPS";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&caps_word>, <&kp CAPS>;
+        };
     };
 
     macros {
@@ -97,8 +104,7 @@
                 COMBC(28, 29, &php_ed ) /* ` = $`       */
 
                 // Other
-                COMBO( 16, 19, CAPS) // both hrm shifts
-                COMBC( 16, 43, &caps_word) // left hrm shift + space
+                COMBO( 16, 19, &capsing) // both hrm shifts, 1st caps_word, 2nd CAPS
                 COMBC( 17, 18, &tog DVORAK_L)
         };
 
