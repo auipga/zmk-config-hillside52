@@ -32,6 +32,7 @@
 
 /*_*/#define P_BOKMRK  &kp F11              // toggle bookmark + show all (+LC=mnemonic)
 /*l*/#define P_COMENT  &kp LC(DE_HASH)      // comment current line + selection (custom shortcut, default is with "/")
+/*l*/#define P_CMNT_B  &kp LS(LC(DE_HASH))  // block comment selection
 /*r*/#define P_FIND    &kp LC(F)            // find    + overall
 /*r*/#define P_REPLAC  &kp LC(R)            // replace + overall
 
