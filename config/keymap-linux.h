@@ -1,3 +1,6 @@
+// U = User defined key press
+// u = User defined key codes
+
 // gnome-shell extension | Custom Hot Corners - Extended
 #define U_DARK     &kp LG(K_PP)     // Light/Dark Gtk Theme toggle
 #define U_ZOOM     &kp LG(LS(DE_Z)) // Large Text toggle (Zoom)
@@ -10,6 +13,6 @@
 // gnome
 #define U_CONSOL  &kp LG(T)         // gnome-terminal
 #define U_ADRBAR  &kp LC(L)         // focus address bar (Firefox, Nautilus)
-#define U_SYSMON  LC(LS(ESC))       // gnome-system-monitor
-#define U_BRI_UP  LG(LC(UP))        // bash -c "ddcutil setvcp 10 +10"
-#define U_BRI_DN  LG(LC(DOWN))      // bash -c "ddcutil setvcp 10 -10"
+#define U_SYSMON  &kp LC(LS(ESC))   // gnome-system-monitor
+#define u_BRI_UP  LG(LC(UP))        // bash -c "ddcutil setvcp 10 +10"
+#define u_BRI_DN  LG(LC(DOWN))      // bash -c "ddcutil setvcp 10 -10"
