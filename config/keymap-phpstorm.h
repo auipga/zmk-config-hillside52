@@ -21,7 +21,7 @@
 // viel mit arrows danach
 /*l*/#define P_COLAPS  &kp LC(KP_MINUS)     // collapse block        (+alt recursive, +LS=all)
 /*l*/#define P_EXPAND  &kp LC(KP_PLUS)      // expand block          (+alt recursive, +LS=all)
-/*l*/#define P_FOLD    &kp LA(KP_MINUS)     // Fold selection        (custom shortcut)
+/*l*/#define P_FOLD    &kp LC(DE_DOT)       // Fold selection
 
 // shiftable
 /*l*/#define P_RECENT  &kp LC(E)            // recent files + recent locations
