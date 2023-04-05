@@ -42,8 +42,8 @@
 
 // Left Arrow Area
 #define LAR_1   &kp C_MUTE
-#define LAR_2   &kp ESC
-#define LAR_3   &lt MED_L K_PP
+#define LAR_2   &mo MED_L
+#define LAR_3   &kp K_PP
 
 // Right Arrow Area ✔
 #define RAR_0   &kp UP    // ✔
