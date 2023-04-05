@@ -99,9 +99,10 @@
                 //</editor-fold>
 
                 // for PHP coding:
-                COMBC( 3,  4, &php_oo ) /* `->`         */ COMBC( 7,  8, &php_dao) // `=>`
-                COMBO(27, 28, DE_DLLR ) /* $            */ COMBO(33, 34, DE_EQUAL) // =
-                COMBC(28, 29, &php_ed ) /* ` = $`       */
+                COMBO( 2,  3, DE_GRAVE) /* `            */ COMBO( 8,  9, DE_RBRC ) // }
+                COMBO( 3,  4, DE_DLLR ) /* $            */ COMBO( 7,  8, DE_LBRC ) // {
+                COMBC(27, 28, &php_oo ) /* `->`         */ COMBO(33, 34, DE_EQUAL) // =
+                COMBC(28, 29, &php_dao) /* ` => ` inner */ COMBC(32, 33, &php_ed ) // ` = $` inner
 
                 // Other
                 COMBC( 16, 19, &capsing) // both hrm shifts, 1st caps_word, 2nd CAPS
