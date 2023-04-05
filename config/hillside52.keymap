@@ -184,7 +184,7 @@ LOP_3         &kp DE_MINUS  &kp DE_PLUS   &kp DE_PIPE   &kp DE_AMPS   &kp DE_BSL
 LAR_1         LAR_2         LAR_3                       L_ENC         &kp BSPC      LT_2      &kp BSPC                  XXX           ___           XXX           R_ENC                       XXX           XXX           XXX  
                         >;
 
-                        sensor-bindings = <&inc_dec_kp u_BRI_DN u_BRI_UP &inc_dec_kp P_ P_>;
+                        sensor-bindings = <&inc_dec_kp u_TAB_PRV u_TAB_NXT &inc_dec_kp P_ P_>;
                 };
 
                 function_layer {
