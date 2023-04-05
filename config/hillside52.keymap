@@ -99,8 +99,14 @@
                 //</editor-fold>
 
                 // for PHP coding:
+                // row 0
                 COMBO( 2,  3, DE_GRAVE) /* `            */ COMBO( 8,  9, DE_RBRC ) // }
                 COMBO( 3,  4, DE_DLLR ) /* $            */ COMBO( 7,  8, DE_LBRC ) // {
+
+                // row 1
+                //  is fully engaged with home row mods !!
+
+                // row 2
                 COMBC(27, 28, &php_oo ) /* `->`         */ COMBO(33, 34, DE_EQUAL) // =
                 COMBC(28, 29, &php_dao) /* ` => ` inner */ COMBC(32, 33, &php_ed ) // ` = $` inner
 
