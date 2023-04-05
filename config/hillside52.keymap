@@ -182,13 +182,13 @@ LAR_1       LAR_2      ___                      L_ENC         XXX            &re
 
                 symbols_layer {
                         bindings = <
-                        // ^@*{}   ~<>/%
-                        // €$:=?   !()";
-                        // -+|&\   _[]'#
-LOP_1         &kp DE_CARET  &kp DE_AT     &kp DE_STAR   &kp DE_LBRC   &kp DE_RBRC                                                                   &kp DE_TILDE  &kp DE_LT     &kp DE_GT     &kp DE_FSLH   &kp DE_PRCNT  &kp BSPC
-LOP_2         &kp DE_EURO   &kp DE_DLLR   &kp DE_COLON  &kp DE_EQUAL  &kp DE_QMARK                                                                  &kp DE_EXCL   &kp DE_LPAR   &kp DE_RPAR   &kp DE_DQT    &kp DE_SEMI   XXX  
-LOP_3         &kp DE_MINUS  &kp DE_PLUS   &kp DE_PIPE   &kp DE_AMPS   &kp DE_BSLH   XXX                                               XXX           &kp DE_UNDER  &kp DE_LBKT   &kp DE_RBKT   &kp DE_SQT    &kp DE_HASH   XXX  
-LAR_1         LAR_2         LAR_3                       L_ENC         &kp BSPC      LT_2      &kp BSPC                  XXX           ___           XXX           R_ENC                       XXX           XXX           XXX  
+                        // ~@*&\   ^<>/%      combos:     `  $      |         {  }
+                        // €:-+    !()"?
+                        // ;10|    #[]'_      combos:  ra ra -> =>  |  ` = $` =  ra ra
+LOP_1         &kp DE_TILDE  &kp DE_AT     &kp DE_STAR   &kp DE_AMPS   &kp DE_BSLH                                                                   &kp DE_CARET  &kp DE_LT     &kp DE_GT     &kp DE_FSLH   &kp DE_PRCNT  &kp BSPC
+LOP_2         &kp DE_EURO   &kp DE_COLON  &kp DE_MINUS  &kp DE_PLUS   XXX                                                                           &kp DE_EXCL   &kp DE_LPAR   &kp DE_RPAR   &kp DE_DQT    &kp DE_QMARK  XXX
+LOP_3         &kp DE_SEMI   &kp N1        &kp N0        &kp DE_PIPE   XXX           XXX                                               XXX           &kp DE_HASH   &kp DE_LBKT   &kp DE_RBKT   &kp DE_SQT    &kp DE_UNDER  XXX
+LAR_1         LAR_2         LAR_3                       L_ENC         &kp BSPC      LT_2      &kp BSPC                  XXX           ___           XXX           R_ENC                       XXX           XXX           XXX
                         >;
 
                         sensor-bindings = <&inc_dec_kp u_TAB_PRV u_TAB_NXT &inc_dec_kp P_ P_>;
