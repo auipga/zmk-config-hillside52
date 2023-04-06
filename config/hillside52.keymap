@@ -53,8 +53,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_A";
             #binding-cells = <0>;
-            tapping-term-ms = <500>;
-            bindings = <U_SYSMON>, <&a1>, <&a2>;
+            tapping-term-ms = <300>;
+            bindings = <&a1>, <&a2>;
         };
         capsing: tap_dance_caps_word_caps_lock {
             compatible = "zmk,behavior-tap-dance";
