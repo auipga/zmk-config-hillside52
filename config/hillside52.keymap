@@ -49,6 +49,13 @@
             flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
         };
+        TD_a: tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_A";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&a1>, <&a2>;
+        };
         capsing: tap_dance_caps_word_caps_lock {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_CAPS";
@@ -68,6 +75,7 @@
 
         // other stuff
         ZMK_MACRO(a1,        bindings = <&kp A         &kp RET       >; )
+        ZMK_MACRO(a2,        bindings = <&kp RET       &kp A         &kp RET       >; )
     };
 
         combos {
