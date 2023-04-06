@@ -55,7 +55,7 @@
 // Left Thumb Keys
 #define LTK_1    RET   // ✔
 #define LTK_2    SPACE // ✔
-#define LTK_3    TAB   //
+#define LTK_3    ESC   // ✔
 //#define LTK_4    L_ENC  ✔
 #define LTK_2_1  LSHFT
 
