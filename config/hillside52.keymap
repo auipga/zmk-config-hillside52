@@ -200,7 +200,7 @@ XXX           XXX           XXX                         L_ENC         LT_3      
                         bindings = <
 XXX       XXX       XXX                P_FOLD        P_COLAPS       P_EXPAND                                   XXX    XXX    XXX    XXX       XXX       XXX
 XXX       XXX       &sm LALT LA(LS(D)) &sm LCTRL P_  &sm LSHIFT P_  P_COMENT                                   XXX    XXX    XXX    XXX       XXX       XXX
-XXX       XXX       P_EXT_S            P_STRPOP      P_SELECT       XXX       XXX                    XXX       XXX    XXX    XXX    XXX       P_DIFPRV  XXX
+XXX       XXX       P_EXT_S            P_STRPOP      P_SELOCC       XXX       XXX                    XXX       XXX    XXX    XXX    XXX       P_DIFPRV  XXX
 XXX       XXX       XXX                              L_ENC          ___       XXX    XXX      XXX    P_ACTION  XXX    R_ENC         P_CMPPRV  P_DIFNXT  P_CMPNXT
                         >;
                 };
