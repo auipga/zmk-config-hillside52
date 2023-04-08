@@ -199,7 +199,7 @@ XXX           XXX           XXX                         L_ENC         LT_3      
                 phpstorm_layer {
                         bindings = <
 ________  ________  ________  P_FOLD    P_COLAPS  P_EXPAND                                           ________  ________  ________  ________  P_F_STRK  ________
-XXX       XXX       &sm LALT LA(LS(D)) &sm LCTRL P_  &sm LSHIFT P_  P_COMENT                                   XXX    XXX    XXX    XXX       XXX       XXX
+________  ________  P_CLPCMP  P_COMPAR  P_STRPOP  P_FIND                                             ________  ________  ________  ________  ________  ________
 XXX       XXX       P_EXT_S            P_STRPOP      P_SELOCC       XXX       XXX                    XXX       XXX    XXX    XXX    XXX       P_DIFPRV  XXX
 XXX       XXX       XXX                              L_ENC          ___       XXX    XXX      XXX    P_ACTION  XXX    R_ENC         P_CMPPRV  P_DIFNXT  P_CMPNXT
                         >;
