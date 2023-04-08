@@ -198,10 +198,10 @@ XXX           XXX           XXX                         L_ENC         LT_3      
 
                 phpstorm_layer {
                         bindings = <
-XXX       XXX       XXX                P_FOLD        P_COLAPS       P_EXPAND                                   XXX    XXX    XXX    XXX       XXX       XXX
-XXX       XXX       &sm LALT LA(LS(D)) &sm LCTRL P_  &sm LSHIFT P_  P_COMENT                                   XXX    XXX    XXX    XXX       XXX       XXX
-XXX       XXX       P_EXT_S            P_STRPOP      P_SELECT       XXX       XXX                    XXX       XXX    XXX    XXX    XXX       P_DIFPRV  XXX
-XXX       XXX       XXX                              L_ENC          ___       XXX    XXX      XXX    P_ACTION  XXX    R_ENC         P_CMPPRV  P_DIFNXT  P_CMPNXT
+________  ________  ________  P_FOLD    P_COLAPS  P_EXPAND                                           ________  ________  ________  ________  ________  ________
+________  ________  ________  ________  ________  ________                                           ________  ________  ________  ________  ________  ________
+________  ________  ________  P_STRPOP  P_SELMOR  ________  ________                       ________  ________  ________  ________  ________  ________  ________
+________  ________  ________            L_ENC     ___       ________  ________   ________  P_ACTION  LSHIFT    R_ENC               ________  ________  ________
                         >;
                 };
         };
