@@ -15,7 +15,7 @@
 /*_*/#define P_INTENT  &kp LC(LA(I))        // intent
 /*_*/#define P_REFORM  &kp LC(LA(L))        // reformat
 /*_*/#define P_CAR_UP  &kp LC(LA(PG_UP))    // clone caret above
-/*_*/#define P_CAR_DN  &kp LC(LA(PG_DN))    // clone caret above
+/*_*/#define P_CAR_DN  &kp LC(LA(PG_DN))    // clone caret below
 /*r*/#define P_F_STRK  &kp LC(F12)          // File structure popup :D
 /*r*/#define P_TEMPL   &kp LC(J)            // Insert live template (awesome!!!), postfix completion (awesome!)
 

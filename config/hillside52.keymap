@@ -201,7 +201,7 @@ XXX           XXX           XXX                         L_ENC         LT_3      
                 phpstorm_layer {
                         bindings = <
 ________  ________  ________  P_FOLD    P_COLAPS  P_EXPAND                                           ________  ________  ________  ________  P_F_STRK  ________
-________  ________  P_CLPCMP  P_COMPAR  P_STRPOP  P_FIND_l                                           ________  ________  ________  ________  ________  ________
+________  ________  P_COMPAR  P_CLPCMP  P_STRPOP  P_FIND_l                                           ________  ________  ________  ________  ________  ________
 ________  ________  ________  P_SELOCC  P_SELM_l  P_SELMO_  ________                       ________  ________  P_TEMPL   P_SURRWI  ________  RAR_0     ROP_3
 ________  ________  ________            L_ENC     ___       ________  ________   ________  P_ACTION &kp LSHIFT R_ENC               RAR_1     RAR_2     RAR_3
                         >;
@@ -229,6 +229,8 @@ ________  ________  ________  ________  ________  ________                      
 ________  ________  ________  ________  P_SELOCC  ________  ________                       ________  ________  P_SELMO_  P_SELMOR  P_CAR_DN  ___       ________
 ________  ________  ________            L_ENC     ___       ________  ________   ________  ________  ________  R_ENC               ___       ___       ___
                         >;
+
+                        sensor-bindings = <&inc_dec_kp p_PREV p_NEXT &inc_dec_kp p_PREV p_NEXT>;
                 };
         };
 };
