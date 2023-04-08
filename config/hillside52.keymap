@@ -22,6 +22,7 @@
 #define SYM_L    5
 #define FUN_L    6
 #define PHP_L    7
+#define P_FIND_L 8
 
 &lt {
     tapping-term-ms = <200>;
@@ -199,10 +200,21 @@ XXX           XXX           XXX                         L_ENC         LT_3      
                 phpstorm_layer {
                         bindings = <
 ________  ________  ________  P_FOLD    P_COLAPS  P_EXPAND                                           ________  ________  ________  ________  P_F_STRK  ________
-________  ________  P_CLPCMP  P_COMPAR  P_STRPOP  P_FIND                                             ________  ________  ________  ________  ________  ________
+________  ________  P_CLPCMP  P_COMPAR  P_STRPOP  P_FIND_l                                           ________  ________  ________  ________  ________  ________
 ________  ________  ________  P_SELOCC  P_SELMOR  P_SELMO_  ________                       ________  ________  P_TEMPL   P_SURRWI  ________  ________  ________
 ________  ________  ________            L_ENC     ___       ________  ________   ________  P_ACTION &kp LSHIFT R_ENC               ________  ________  ________
                         >;
+                };
+
+                phpstorm_find_layer {
+                        bindings = <
+________  ________  ________  ________  ________  ________                                           ________  P_FINDA   P_REPLAC  P_REPLAA  ________  ________
+________  ________  ________  ________  ________  P_FIND                                             ________  P_PREV    ________  P_NEXT    ________  ________
+________  ________  ________  ________  ________  ________  ________                       ________  ________  LA(C)     LA(W)     LA(X)     ________  ________
+________  ________  ________            L_ENC     ___       ________  ________   ________  ________  ________  R_ENC               ________  ________  ________
+                        >;
+
+                        sensor-bindings = <&inc_dec_kp P_PREV P_NEXT &inc_dec_kp P_PREV P_NEXT>;
                 };
         };
 };

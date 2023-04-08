@@ -51,6 +51,7 @@
 /*l*/#define P_CMNT_B  &kp LS(LC(DE_HASH))  // block comment selection
 /*r*/#define P_FIND    &kp u_FIND           // find
 /*r*/#define P_FINDA   &kp LS(u_FIND)       // find overall
+/*r*/#define P_FIND_l  &lt P_FIND_L u_FIND  // find & FIND-Layer
 /*r*/#define P_REPLAC  &kp LC(R)            // replace + overall
 /*r*/#define P_REPLAA  &kp LS(LC(R))        // replace overall
 
