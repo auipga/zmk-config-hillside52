@@ -12,7 +12,12 @@
 /*l*/#define P_DUPLIC  &kp LC(D)            // duplicate line/selection
 /*l*/#define P_COMPAR  &kp LC(D)            // compare
 /*l*/#define P_DEL_L   &kp LC(DE_Y)         // delete line
-/*r*/#define P_LVTPL   &kp LC(J)            // Insert live template (awesome!!!)
+/*_*/#define P_INTENT  &kp LC(LA(I))        // intent
+/*_*/#define P_REFORM  &kp LC(LA(L))        // reformat
+/*_*/#define P_CAR_UP  &kp LC(LA(PG_UP))    // clone caret above
+/*_*/#define P_CAR_DN  &kp LC(LA(PG_DN))    // clone caret above
+/*r*/#define P_F_STRK  &kp LC(F12)          // File structure popup :D
+/*r*/#define P_TEMPL   &kp LC(J)            // Insert live template (awesome!!!), postfix completion (awesome!)
 
 /*_*/#define P_RENAME  &kp LS(F6)           // Rename selected file, function, variable,...
 /*_*/#define P_DECLAR  &kp LC(B)            // Goto declaration or usages
