@@ -25,6 +25,10 @@
 /*_*/#define P_Q_DOC   &kp LC(Q)            // Quick documentation
 /*_*/#define P_Q_DEF   &kp LC(LS(I))        // Quick definition
 
+// Tool windows
+#define P_W_GIT    &kp LA(N9)         // GIT
+#define P_W_TERM   &kp LA(F12)        // Terminal
+
 // viel mit arrows danach
 /*l*/#define P_COLAPS  &kp LC(KP_MINUS)     // collapse block        (+alt recursive, +LS=all)
 /*l*/#define P_EXPAND  &kp LC(KP_PLUS)      // expand block          (+alt recursive, +LS=all)
