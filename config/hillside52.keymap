@@ -201,7 +201,7 @@ XXX           XXX           XXX                         L_ENC         LT_3      
 ________  ________  ________  P_FOLD    P_COLAPS  P_EXPAND                                           ________  ________  ________  ________  P_F_STRK  ________
 ________  ________  P_CLPCMP  P_COMPAR  P_STRPOP  P_FIND                                             ________  ________  ________  ________  ________  ________
 ________  ________  ________  P_SELOCC  P_SELMOR  P_SELMO_  ________                       ________  ________  P_TEMPL   P_SURRWI  ________  ________  ________
-XXX       XXX       XXX                              L_ENC          ___       XXX    XXX      XXX    P_ACTION  XXX    R_ENC         P_CMPPRV  P_DIFNXT  P_CMPNXT
+________  ________  ________            L_ENC     ___       ________  ________   ________  P_ACTION  LSHIFT    R_ENC               ________  ________  ________
                         >;
                 };
         };
