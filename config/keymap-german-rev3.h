@@ -55,6 +55,8 @@
 #define ENT RET
 
 // more seeable aliases
-#define XXX &none
-#define ___ &trans
-#define P_  SPACE // temp
+#define XXX      &none
+#define ___      &trans
+#define XXXXXXXX &none
+#define ________ &none
+#define P_       SPACE // temp
