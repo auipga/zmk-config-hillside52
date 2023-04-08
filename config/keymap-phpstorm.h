@@ -44,25 +44,26 @@
 /*_*/#define P_BOKMRK  &kp F11              // toggle bookmark + show all (+LC=mnemonic)
 /*l*/#define P_COMENT  &kp LC(DE_HASH)      // comment current line + selection (custom shortcut, default is with "/")
 /*l*/#define P_CMNT_B  &kp LS(LC(DE_HASH))  // block comment selection
-/*r*/#define P_FIND    &kp LC(F)            // find    + overall
+/*r*/#define P_FIND    &kp u_FIND           // find
+/*r*/#define P_FINDA   &kp LS(u_FIND)       // find overall
 /*r*/#define P_REPLAC  &kp LC(R)            // replace + overall
+/*r*/#define P_REPLAA  &kp LS(LC(R))        // replace overall
 
 /*l*/#define P_REFACT  &kp LC(LA(LS(T)))    // Refactor this
-//#define P_SURRWI  &kp LC(LA(V))      // Introduce variable
-//#define P_SURRWI  &kp LC(LA(P))      // Introduce parameter
-//#define P_SURRWI  &kp LC(LA(C))      // Introduce constant
-//#define P_SURRWI  &kp LC(LA(F))      // Introduce field
-//#define P_SURRWI  &kp LC(LA(M))      // Extract method
-// custom shortcuts
-/*_*/#define P_SURRWI  &kp LA(KP_N0)        // surround with
+//#define P_IN_VAR  &kp LC(LA(V))             // Introduce variable
+//#define P_IN_PAR  &kp LC(LA(P))             // Introduce parameter
+//#define P_IN_CON  &kp LC(LA(C))             // Introduce constant
+//#define P_IN_FLD  &kp LC(LA(F))             // Introduce field
+//#define P_SURRWI  &kp LC(LA(M))             // Extract method
+/*_*/#define P_SURRWI  &kp LA(KP_N0)        // surround with, LC(LA(T))
 
 // git
-/*_*/#define P_GITPOP  &kp LA(DE_PLUS)        // VCS Actions Popup
+/*_*/#define P_GITPOP  &kp LA(DE_PLUS)      // VCS Actions Popup
 
 // Comparison window
-/*_*/#define P_CMPNXT  &kp LA(LS(RIGHT))      // Compare next file
-/*_*/#define P_CMPPRV  &kp LA(LS(LEFT))       // Compare previous file
-/*_*/#define P_DIFNXT  &kp F7                 // Go to next difference
-/*_*/#define P_DIFPRV  &kp LS(F7)             // Go to previous difference
+/*_*/#define P_CMPNXT  &kp LA(LS(RIGHT))    // Compare next file
+/*_*/#define P_CMPPRV  &kp LA(LS(LEFT))     // Compare previous file
+/*_*/#define P_DIFNXT  &kp F7               // Go to next difference
+/*_*/#define P_DIFPRV  &kp LS(F7)           // Go to previous difference
 
 
