@@ -156,8 +156,8 @@ ___        ___              ___                         L_ENC         ___       
                 nav_layer {
                         bindings = <
 LOP_1  U_SWI_POP       &kp LA(ESC)     &kp LC(R)        &kp F5             U_ADRBAR                                                                 &kp PG_UP     &kp HOME      &kp UP        &kp END       XXX           XXX
-LOP_2  &sm LGUI LC(X)  &sm LALT LC(C)  &sm LCTRL LC(V)  &sm LSHIFT u_UNDO  P_COMENT                                                                 &kp PG_DN     &kp LEFT      &kp DOWN      &kp RIGHT     &kp ESC       P_COLAPS
-LOP_3  &kp LC(A)       &kp LS(LC(C))   &kp LS(LC(V))    &kp u_REDO         P_CMNT_B  XXX                                              XXX           &kp INSERT    &kp LS(TAB)   &kp DE_FSLH   &kp TAB       RAR_0         P_EXPAND
+LOP_2  &sm LGUI LC(X)  &sm LALT LC(C)  &sm LCTRL LC(V)  &sm LSHIFT u_UNDO  P_COMENT                                                                 &kp PG_DN     &kp LEFT      &kp DOWN      &kp RIGHT     &kp ESC       XXX
+LOP_3  &kp LC(A)       &kp LS(LC(C))   &kp LS(LC(V))    &kp u_REDO         P_CMNT_B  XXX                                              XXX           &kp INSERT    &kp LS(TAB)   &kp DE_FSLH   &kp TAB       RAR_0         XXX
 XXX    XXX             XXX                              L_ENC              LT_3      ___          &kp LG(L)             &kp RTK_1     &kp RTK_2     &kp K_APP     R_ENC                       RAR_1         RAR_2         RAR_3
                         >;
                 };
