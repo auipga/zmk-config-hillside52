@@ -10,6 +10,7 @@
 /*l*/#define P_ACTION  &kp LC(LS(A))        // Find action...
 /*l*/#define P_CLPCMP  &kp LA(LS(D))        // compare with clipboard
 /*l*/#define P_DUPLIC  &kp LC(D)            // duplicate line/selection
+/*l*/#define P_COMPAR  &kp LC(D)            // compare
 /*l*/#define P_DEL_L   &kp LC(DE_Y)         // delete line
 /*r*/#define P_LVTPL   &kp LC(J)            // Insert live template (awesome!!!)
 
