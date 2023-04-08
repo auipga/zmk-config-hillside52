@@ -36,6 +36,8 @@
 
 // shiftable
 /*l*/#define P_RECENT  &kp LC(E)            // recent files + recent locations
+/*l*/#define P_RCNT_F  &kp LC(E)            // recent files
+/*l*/#define P_RCNT_L  &kp LS(LC(E))        // recent locations
 /*l*/#define P_SELECT  &kp LA(J)            // select next occurance + unselect last (+LC+LS=all, auch von der Suche aus)
 /*l*/#define P_NEXT    &kp F3               // next occurance (of search or current selection) + previous
 /*_*/#define P_EXT_S   &kp LC(W)            // extend selection + shrink
