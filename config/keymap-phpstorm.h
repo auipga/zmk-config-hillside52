@@ -34,11 +34,14 @@
 /*l*/#define P_EXPAND  &kp LC(KP_PLUS)      // expand block          (+alt recursive, +LS=all)
 /*l*/#define P_FOLD    &kp LC(DE_DOT)       // Fold selection
 
-// shiftable
-/*l*/#define P_RECENT  &kp LC(E)            // recent files + recent locations
-/*l*/#define P_SELECT  &kp LA(J)            // select next occurance + unselect last (+LC+LS=all, auch von der Suche aus)
-/*l*/#define P_NEXT    &kp F3               // next occurance (of search or current selection) + previous
-/*_*/#define P_EXT_S   &kp LC(W)            // extend selection + shrink
+/*l*/#define P_RCNT_F  &kp LC(E)            // recent files
+/*l*/#define P_RCNT_L  &kp LS(LC(E))        // recent locations
+/*l*/#define P_SELOCC  &kp LA(J)            // select next occurance (+LC+LS=all, auch von der Suche aus)
+/*l*/#define P_SELOC_  &kp LS(LA(J))        // unselect last occurance
+/*l*/#define P_NEXT    &kp F3               // next occurance (of search or current selection)
+/*l*/#define P_PREV    &kp LS(F3)           // prev occurance (of search or current selection)
+/*_*/#define P_SELMOR  &kp LC(W)            // extend selection
+/*_*/#define P_SELMO_  &kp LS(LC(W))        // shrink selection
 /*r*/#define P_NAVIGT  &kp LC(N)            // Navigate Classes + Files
 
 /*_*/#define P_BOKMRK  &kp F11              // toggle bookmark + show all (+LC=mnemonic)
