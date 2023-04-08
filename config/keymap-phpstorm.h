@@ -40,8 +40,10 @@
 /*l*/#define P_RCNT_L  &kp LS(LC(E))        // recent locations
 /*l*/#define P_SELOCC  &kp LA(J)            // select next occurance (+LC+LS=all, auch von der Suche aus)
 /*l*/#define P_SELOC_  &kp LS(LA(J))        // unselect last occurance
-/*l*/#define P_NEXT    &kp F3               // next occurance (of search or current selection)
-/*l*/#define P_PREV    &kp LS(F3)           // prev occurance (of search or current selection)
+/*l*/#define p_NEXT    F3               // next occurance (of search or current selection)
+/*l*/#define p_PREV    LS(F3)           // prev occurance (of search or current selection)
+/*l*/#define P_NEXT    &kp p_NEXT           // next occurance (of search or current selection)
+/*l*/#define P_PREV    &kp p_PREV           // prev occurance (of search or current selection)
 /*_*/#define P_SELMOR  &kp LC(W)            // extend selection
 /*_*/#define P_SELMO_  &kp LS(LC(W))        // shrink selection
 /*r*/#define P_NAVIGT  &kp LC(N)            // Navigate Classes + Files

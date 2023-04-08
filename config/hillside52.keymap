@@ -214,7 +214,7 @@ ________  ________  ________  ________  ________  ________  ________            
 ________  ________  ________            L_ENC     ___       ________  ________   ________  ________  ________  R_ENC               ________  ________  ________
                         >;
 
-                        sensor-bindings = <&inc_dec_kp P_PREV P_NEXT &inc_dec_kp P_PREV P_NEXT>;
+                        sensor-bindings = <&inc_dec_kp p_PREV p_NEXT &inc_dec_kp p_PREV p_NEXT>;
                 };
         };
 };
