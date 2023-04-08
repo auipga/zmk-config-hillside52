@@ -23,6 +23,7 @@
 #define FUN_L    6
 #define PHP_L    7
 #define P_FIND_L 8
+#define P_SEL_L  9
 
 &lt {
     tapping-term-ms = <200>;
@@ -201,7 +202,7 @@ XXX           XXX           XXX                         L_ENC         LT_3      
                         bindings = <
 ________  ________  ________  P_FOLD    P_COLAPS  P_EXPAND                                           ________  ________  ________  ________  P_F_STRK  ________
 ________  ________  P_CLPCMP  P_COMPAR  P_STRPOP  P_FIND_l                                           ________  ________  ________  ________  ________  ________
-________  ________  ________  P_SELOCC  P_SELMOR  P_SELMO_  ________                       ________  ________  P_TEMPL   P_SURRWI  ________  ________  ________
+________  ________  ________  P_SELOCC  P_SELM_l  P_SELMO_  ________                       ________  ________  P_TEMPL   P_SURRWI  ________  ________  ________
 ________  ________  ________            L_ENC     ___       ________  ________   ________  P_ACTION &kp LSHIFT R_ENC               ________  ________  ________
                         >;
                 };
@@ -215,6 +216,18 @@ ________  ________  ________            L_ENC     ___       ________  ________  
                         >;
 
                         sensor-bindings = <&inc_dec_kp p_PREV p_NEXT &inc_dec_kp p_PREV p_NEXT>;
+                };
+
+                phpstorm_selection_layer {
+                        bindings = <
+//                                                                                                   last edit location (location prev/next)
+//                                                                                                   select next occurance
+//                                                                                                   expand selection (select more)
+________  ________  ________  ________  ________  ________                                           ________  P_LOCPRV  ________  P_LOCNXT  P_CAR_UP  ________
+________  ________  ________  ________  ________  ________                                           ________  P_PREV    P_SELOCC  P_NEXT    P_CAR_DN  ________
+________  ________  ________  ________  P_SELOCC  ________  ________                       ________  ________  P_SELMO_  P_SELOC_  P_SELMOR  ________  ________
+________  ________  ________            L_ENC     ___       ________  ________   ________  ________  ________  R_ENC               ________  ________  ________
+                        >;
                 };
         };
 };

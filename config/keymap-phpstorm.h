@@ -44,8 +44,10 @@
 /*l*/#define p_PREV    LS(F3)           // prev occurance (of search or current selection)
 /*l*/#define P_NEXT    &kp p_NEXT           // next occurance (of search or current selection)
 /*l*/#define P_PREV    &kp p_PREV           // prev occurance (of search or current selection)
-/*_*/#define P_SELMOR  &kp LC(W)            // extend selection
-/*_*/#define P_SELMO_  &kp LS(LC(W))        // shrink selection
+/*_*/#define p_SELMOR  LC(W)                // extend selection
+/*_*/#define P_SELMOR  &kp p_SELMOR         // extend selection
+/*_*/#define P_SELMO_  &kp LS(p_SELMOR)     // shrink selection
+/*_*/#define P_SELM_l  &lt P_SEL_L p_SELMOR // extend selection
 /*r*/#define P_NAVIGT  &kp LC(N)            // Navigate Classes + Files
 
 /*_*/#define P_BOKMRK  &kp F11              // toggle bookmark + show all (+LC=mnemonic)
