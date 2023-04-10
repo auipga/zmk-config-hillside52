@@ -24,6 +24,7 @@
 #define PHP_L    7
 #define P_FIND_L 8
 #define P_SEL_L  9
+#define P_GIT_L 10
 
 &lt {
     tapping-term-ms = <200>;
@@ -231,6 +232,15 @@ ________  ________  ________            L_ENC     ___       ________  ________  
                         >;
 
                         sensor-bindings = <&inc_dec_kp p_PREV p_NEXT &inc_dec_kp p_PREV p_NEXT>;
+                };
+
+                phpstorm_git_layer {
+                        bindings = <
+________  ________  ________  ________  ________  ________                                           P_DIFPOP  ________  P_DIFPRV  ________  ________  ________
+________  ________  ________  ________  ________  ________                                           P_GITPOP  P_CMPPRV  P_DIFNXT  P_CMPNXT  ________  ________
+________  ________  ________  ________  ________  ________  ________                       ________  ________  P_G_ComW  P_G_Comm  P_G_ComP  P_G_Push  ________
+________  ________  ________            L_ENC     ___       ________  ________   ________  ________  ________  R_ENC               ___       ___       ___
+                        >;
                 };
         };
 };

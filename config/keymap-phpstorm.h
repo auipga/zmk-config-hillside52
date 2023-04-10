@@ -69,6 +69,10 @@
 
 // git
 /*_*/#define P_GITPOP  &kp LA(DE_PLUS)      // VCS Actions Popup
+/*_*/#define P_G_ComW  &kp LC(K)            // Commit dialog
+/*_*/#define P_G_Comm  &kp LA(I)            // Commit button in the dialog
+/*_*/#define P_G_ComP  &kp LS(LC(K))        // Push (in the dialog: Commit & Push)
+/*_*/#define P_G_Push  &kp LA(P)            // Push button in the dialog
 
 // Comparison window
 /*_*/#define P_CMPNXT  &kp LA(LS(RIGHT))    // Compare next file
