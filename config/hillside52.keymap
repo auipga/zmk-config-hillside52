@@ -76,7 +76,7 @@
         ZMK_MACRO(php_ed,    bindings = <&kp SPACE     &kp DE_EQUAL  &kp SPACE     &kp DE_DLLR   >; )
 
         // repeate shifted
-        ZMK_MACRO(ls_again,  bindings = <&macro_press &kp LSHFT>, <&key_repeat>, <&macro_release &kp LSHFT>; )
+        ZMK_MACRO(ls_again,  bindings = <&macro_press &kp LSHFT>, <&kp A>, <&macro_release &kp LSHFT>; )
 
         // other stuff
         ZMK_MACRO(a1,        bindings = <&kp A         &kp RET       >; )
