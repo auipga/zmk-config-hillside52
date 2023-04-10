@@ -28,6 +28,7 @@
 // Tool windows
 #define P_W_GIT    &kp LA(N9)         // GIT
 #define P_W_TERM   &kp LA(F12)        // Terminal
+#define P_W_ReHo   &kp LA(R)          // Remote Host (custom)
 
 // viel mit arrows danach
 /*l*/#define P_COLAPS  &kp LC(KP_MINUS)     // collapse block        (+alt recursive, +LS=all)
@@ -38,8 +39,9 @@
 /*l*/#define P_RECENT  &kp LC(E)            // recent files + recent locations
 /*l*/#define P_RCNT_F  &kp LC(E)            // recent files
 /*l*/#define P_RCNT_L  &kp LS(LC(E))        // recent locations
-/*l*/#define P_SELOCC  &kp LA(J)            // select next occurance (+LC+LS=all, auch von der Suche aus)
-/*l*/#define P_SELOC_  &kp LS(LA(J))        // unselect last occurance
+/*l*/#define p_SELOCC  LA(J)                // select next occurance (+LC+LS=all, auch von der Suche aus)
+/*l*/#define P_SELOCC  &kp p_SELOCC         // select next occurance
+/*l*/#define P_SELOC_  &kp LS(p_SELOCC)     // unselect last occurance
 /*l*/#define p_NEXT    F3               // next occurance (of search or current selection)
 /*l*/#define p_PREV    LS(F3)           // prev occurance (of search or current selection)
 /*l*/#define P_NEXT    &kp p_NEXT           // next occurance (of search or current selection)
@@ -68,11 +70,11 @@
 /*_*/#define P_SURRWI  &kp LA(KP_N0)        // surround with, LC(LA(T))
 
 // git
-/*_*/#define P_GITPOP  &kp LA(DE_PLUS)      // VCS Actions Popup
+/*_*/#define P_GITPOP  &kp LA(DE_PLUS)      // VCS Actions Popup (custom, else LA(GRAVE))
 /*_*/#define P_G_ComW  &kp LC(K)            // Commit dialog
-/*_*/#define P_G_Comm  &kp LA(I)            // Commit button in the dialog
-/*_*/#define P_G_ComP  &kp LS(LC(K))        // Push (in the dialog: Commit & Push)
-/*_*/#define P_G_Push  &kp LA(P)            // Push button in the dialog
+/*_*/#define P_G_Comm  &kp LA(I)            // Comm&it button in the dialog
+/*_*/#define P_G_ComP  &kp LS(LC(K))        // Push (in the dialog: Commit then Push)
+/*_*/#define P_G_Push  &kp LA(P)            // &Push button in the dialog
 
 // Comparison window
 /*_*/#define P_CMPNXT  &kp LA(LS(RIGHT))    // Compare next file
