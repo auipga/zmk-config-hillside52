@@ -132,7 +132,7 @@ LOP_3         &kp  DE_SEMI  &hm  RALT Q   &kp  J        &kp  K        &kp  X    
 LAR_1         LAR_2         LAR_3                       L_ENC         LT_3          LT_2          LT_1                  RT_1          RT_2          RT_3          R_ENC                       RAR_1         RAR_2         RAR_3
                         >;
 
-                        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
+                        sensor-bindings = <&inc_dec_kp DE_LT DE_GT &inc_dec_kp DE_LT DE_GT>;
                 };
 
                 dvorak_layer {
