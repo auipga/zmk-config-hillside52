@@ -26,11 +26,6 @@
 #define P_SEL_L  9
 #define P_GIT_L 10
 
-// https://github.com/zmkfirmware/zmk/pull/728#issuecomment-883832718
-&left_encoder { steps = <48>; };
-&right_encoder { steps = <48>; };
-&sensors { triggers-per-rotation = <12>; };
-
 &lt {
     tapping-term-ms = <200>;
     quick_tap_ms = <300>;
