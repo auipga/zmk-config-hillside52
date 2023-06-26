@@ -27,8 +27,8 @@
 #define P_GIT_L 10
 
 // https://github.com/zmkfirmware/zmk/pull/728#issuecomment-883832718
-&left_encoder { resolution = <4>; };
-&right_encoder { resolution = <4>; };
+&left_encoder { resolution = <8>; };
+&right_encoder { resolution = <8>; };
 
 &lt {
     tapping-term-ms = <200>;
