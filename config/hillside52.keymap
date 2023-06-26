@@ -26,8 +26,8 @@
 #define P_SEL_L  9
 #define P_GIT_L 10
 
-&left_encoder { resolution = <1>; };
-&right_encoder { resolution = <1>; };
+&left_encoder { resolution = <4>; };
+&right_encoder { resolution = <4>; };
 
 &lt {
     tapping-term-ms = <200>;
