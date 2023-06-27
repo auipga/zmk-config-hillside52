@@ -169,7 +169,7 @@ LOP_3  &kp LC(A)       &kp LS(LC(C))   &kp LS(LC(V))    &kp u_REDO         _____
 XXX    XXX             XXX                              L_ENC              &kp LTK_3  ___         &kp LG(L)             &kp RTK_1     &kp RTK_2     &kp RTK_3     R_ENC                       RAR_1         RAR_2         RAR_3
                         >;
 
-                        sensor-bindings = <&inc_dec_kp P_ P_ &inc_dec_kp LS(TAB) TAB>;
+                        sensor-bindings = <&inc_dec_kp P_ P_ &inc_dec_kp u_TAB_PRV u_TAB_NXT>;
                 };
 
                 media_layer {
