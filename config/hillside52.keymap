@@ -205,7 +205,7 @@ XXX           XXX           XXX           XXX           XXX           XXX       
 XXX           XXX           XXX                         L_ENC         LT_3          LT_2          LT_1                  XXX           XXX           ___           R_ENC                       XXX           XXX           XXX
                         >;
 
-                        sensor-bindings = <&inc_dec_kp u_BRI_DN u_BRI_UP &inc_dec_kp P_ P_>;
+                        sensor-bindings = <&inc_dec_kp u_BRI_DN u_BRI_UP &inc_dec_kp u_BRI_DN u_BRI_UP>;
                 };
 
                 phpstorm_layer {
