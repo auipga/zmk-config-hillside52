@@ -210,44 +210,42 @@ XXX           XXX           XXX                         L_ENC         LT_3      
 
                 phpstorm_layer {
                         bindings = <
-LOP_1     ________  P_CLPCMP           P_FOLD               P_COLAPS              P_EXPAND                                           ________  P_DECLAR  P_PARAMS  P_Q_DOC   P_Q_DEF   ________
-LOP_2     P_DEL_L   &lt P_GIT_L LC(D)  &lt P_FIND_L u_FIND  &lt P_SEL_L p_SELOCC  P_COMENT                                           ________  P_F_STRK  P_INTENT  P_REFORM  P_BOKMRK  ________
-LOP_3     P_RENAME  P_REFACT           P_STRPOP             P_SELMOR              P_CMNT_B  ________                       ________  ________  P_TEMPL   P_SURRWI  ________  RAR_0     ROP_3
-________  ________  ________                                L_ENC                 ___       ________  ________   P_ACTION  XXX     &kp LSHIFT  R_ENC               RAR_1     RAR_2     RAR_3
+LOP_1     ________  P_CLPCMP           P_FOLD                P_COLAPS  P_EXPAND                                           ________  P_DECLAR  P_PARAMS  P_Q_DOC   P_Q_DEF   ________
+LOP_2     P_DEL_L   &lt P_GIT_L LC(D)  &lt P_FIND_L u_FIND   P_STRPOP  P_COMENT                                           ________  P_F_STRK  P_INTENT  P_REFORM  P_BOKMRK  ________
+LOP_3     P_RENAME  P_REFACT           &lt P_SEL_L p_SELOCC  P_SELMOR  P_CMNT_B  ________                       ________  ________  P_TEMPL   P_SURRWI  ________  RAR_0     ROP_3
+________  ________  ________                                 L_ENC     ___       ________  ________   P_ACTION  XXX     &kp LSHIFT  R_ENC               RAR_1     RAR_2     RAR_3
                         >;
+
+                        sensor-bindings = <&inc_dec_kp P_ P_ &inc_dec_kp p_PREV p_NEXT>;
                 };
 
-                phpstorm_find_layer {
+                phpstorm_find_layer { // P_FIND_L
                         bindings = <
-________  ________  ________  ________  ________  ________                                           ________  P_PREV    P_NEXT    ________  ________  ________
-________  ________  ________  ________  ________  ___                                                ________  P_FIND    P_FINDA   P_REPLAC  P_REPLAA  ________
-________  ________  ________  ________  ________  ________  ________                       ________  ________  &kp LA(C) &kp LA(W) &kp LA(X) ___       ________
+LOP_1     ________  ________  ________  ________  ________                                           ________  P_PREV    P_NEXT    ________  ________  ________
+LOP_2     ________  P_PREV    ___       P_NEXT    ________                                           P_FIND    P_FINDA   P_REPLAC  P_REPLAA  ________  ________  // [ Find+all, Replace+all ]
+LOP_3     ________  ________  ________  ________  ________  ________                       ________  ________  &kp LA(C) &kp LA(W) &kp LA(X) ___       ________  // [ Case, Words, Regex (find options) ]
 ________  ________  ________            L_ENC     ___       ________  ________   ________  ________  ________  R_ENC               ___       ___       ___
                         >;
 
-                        sensor-bindings = <&inc_dec_kp p_PREV p_NEXT &inc_dec_kp p_PREV p_NEXT>;
+                        sensor-bindings = <&inc_dec_kp P_ P_ &inc_dec_kp p_PREV p_NEXT>;
                 };
 
-                phpstorm_selection_layer {
+                phpstorm_selection_layer { // P_SEL_L
                         bindings = <
-//                                                                                                   last edit location (location prev/next)
-//                                                                                                   select next occurance
-//                                                                                                   expand selection (select more)
-//                                                                                                   clone caret
-________  ________  ________  ________  ________  ________                                           ________  P_PREV    P_NEXT    P_LOCPRV  P_LOCNXT  ________
-________  ________  ________  ________  ________  ________                                           ________  P_SELOC_  P_SELOCC  P_CAR_UP  ________  ________
-________  ________  ________  ________  ___       ________  ________                       ________  ________  P_SELMO_  P_SELMOR  P_CAR_DN  ___       ________
+LOP_1     ________  ________  ________  ________  ________                                           ________  P_LOCPRV  P_LOCNXT  ________  ________  ________  // [ edit location (prev/next) ]
+LOP_2     ________  ________  ________  ________  ________                                           ________  P_SELOC_  P_SELOCC  P_CAR_UP  ________  ________  // [ select next occurance        ]   [ clone
+LOP_3     ________  P_PREV    ___       P_NEXT    ________  ________                       ________  ________  P_SELMO_  P_SELMOR  P_CAR_DN  ___       ________  // [ expand selection (more/less) ]     caret ]
 ________  ________  ________            L_ENC     ___       ________  ________   ________  ________  ________  R_ENC               ___       ___       ___
                         >;
 
-                        sensor-bindings = <&inc_dec_kp p_PREV p_NEXT &inc_dec_kp p_PREV p_NEXT>;
+                        sensor-bindings = <&inc_dec_kp P_ P_ &inc_dec_kp p_SELOC_ p_SELOCC>;
                 };
 
-                phpstorm_git_layer {
+                phpstorm_git_layer { // P_GIT_L
                         bindings = <
-________  ________  ________  ________  ________  ________                                           P_DIFPOP  ________  P_DIFPRV  ________  ________  ________
-________  ________  ________  ________  ________  ________                                           P_GITPOP  P_CMPPRV  P_DIFNXT  P_CMPNXT  ________  ________
-________  ________  ________  ________  ________  ________  ________                       ________  ________  P_G_ComW  P_G_Comm  P_G_ComP  P_G_Push  ________
+LOP_1     ________  ________  ________  ________  ________                                           P_DIFPOP  ________  P_DIFPRV  ________  ________  ________
+LOP_2     ________  ________  ________  ________  ________                                           P_GITPOP  P_CMPPRV  P_DIFNXT  P_CMPNXT  ________  ________
+LOP_3     ________  ________  ________  ________  ________  ________                       ________  ________  P_G_ComW  P_G_Comm  P_G_ComP  P_G_Push  ________
 ________  ________  ________            L_ENC     ___       ________  ________   ________  ________  ________  R_ENC               ___       ___       ___
                         >;
                 };
