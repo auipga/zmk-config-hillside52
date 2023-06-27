@@ -21,10 +21,11 @@
 #define MED_L    4 // LEFT      RIGHT     ✔                       ✖
 #define SYM_L    5 // u_TAB_PRV u_TAB_NXT ✖                       ✖
 #define FUN_L    6 // u_BRI_DN  u_BRI_UP  ✔  u_BRI_DN  u_BRI_UP   ✖
-#define PHP_L    7 //                     ✖  p_PREV    p_NEXT     ✔
-#define P_FIND_L 8 //                     ✖  p_PREV    p_NEXT     ✖
-#define P_SEL_L  9 //                     ✖                       ✖
-#define P_GIT_L 10 //                     ✖                       ✖
+#define PHP_L    7 //                     ✔  p_PREV    p_NEXT     ✔
+#define P_FIND_L 8 //                     ✔  p_PREV    p_NEXT     ✔
+#define P_SEL_L  9 //                     ✔  p_SELOC_  p_SELOCC   ✔
+#define P_CMP_L 10 //                     ✔  P_DIFPRV  P_DIFNXT   ✔
+#define P_GIT_L 11 //                     ✖                       ✖
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &hm LGUI  k1   &hm LALT  k2   &hm LCTRL k3   &hm LSHFT k4
@@ -210,10 +211,10 @@ XXX           XXX           XXX                         L_ENC         LT_3      
 
                 phpstorm_layer {
                         bindings = <
-LOP_1     ________  P_CLPCMP           P_FOLD                P_COLAPS  P_EXPAND                                           ________  P_DECLAR  P_PARAMS  P_Q_DOC   P_Q_DEF   ________
-LOP_2     P_DEL_L   &lt P_GIT_L LC(D)  &lt P_FIND_L u_FIND   P_STRPOP  P_COMENT                                           ________  P_F_STRK  P_INTENT  P_REFORM  P_BOKMRK  ________
-LOP_3     P_RENAME  P_REFACT           &lt P_SEL_L p_SELOCC  P_SELMOR  P_CMNT_B  ________                       ________  ________  P_TEMPL   P_SURRWI  ________  RAR_0     ROP_3
-________  ________  ________                                 L_ENC     ___       ________  ________   P_ACTION  XXX     &kp LSHIFT  R_ENC               RAR_1     RAR_2     RAR_3
+LOP_1     ________  LC(D)                 P_FOLD                P_COLAPS  P_EXPAND                                                      ________      P_DECLAR      P_PARAMS      P_Q_DOC       P_Q_DEF       ________
+LOP_2     P_DEL_L   &lt P_CMP_L P_CLPCMP  &lt P_FIND_L u_FIND   P_STRPOP  P_COMENT                                                      ________      P_F_STRK      P_INTENT      P_REFORM      P_BOKMRK      ________
+LOP_3     P_RENAME  &lt P_GIT_L p_W_GIT   &lt P_SEL_L p_SELOCC  P_SELMOR  P_CMNT_B  ________                              ________      ________      P_TEMPL       P_SURRWI      ________      RAR_0         ROP_3
+________  ________  ________                                    L_ENC     ___       ________  ________      P_ACTION      XXX           &kp LSHIFT    R_ENC                       RAR_1         RAR_2         RAR_3
                         >;
 
                         sensor-bindings = <&inc_dec_kp P_ P_ &inc_dec_kp p_PREV p_NEXT>;
@@ -239,6 +240,17 @@ ________  ________  ________            L_ENC     ___       ________  ________  
                         >;
 
                         sensor-bindings = <&inc_dec_kp P_ P_ &inc_dec_kp p_SELOC_ p_SELOCC>;
+                };
+
+                phpstorm_compare_layer {
+                        bindings = <
+________  ________  ________  ________  ________  ________                                           ________  ________  P_DIFPRV  ________  ________  ________
+________  ________  ___       P_CMPPRV  P_CMPNXT  ________                                           ________  P_CMPPRV  P_DIFNXT  P_CMPNXT  ________  ________
+________  ________  ________  ________  ________  ________  ________                       ________  ________  P_CMPPRV  P_CMPNXT  ________  ___       ________
+________  ________  ________            L_ENC     ___       ________  ________   ________  ________  ________  R_ENC               ___       ___       ___
+                        >;
+
+                        sensor-bindings = <&inc_dec_kp P_ P_ &inc_dec_kp P_DIFPRV P_DIFNXT>;
                 };
 
                 phpstorm_git_layer { // P_GIT_L
