@@ -163,10 +163,10 @@ ___        ___              ___                         L_ENC         ___       
 
                 nav_layer {
                         bindings = <
-LOP_1  U_SWI_POP       &kp LA(ESC)     &kp LC(R)        &kp F5             U_ADRBAR                                                                 &kp INSERT    &kp PG_UP     &kp UP        &kp PG_DN     XXX           XXX
-LOP_2  &sm LGUI LC(X)  &sm LALT LC(C)  &sm LCTRL LC(V)  &sm LSHIFT u_UNDO  P_COMENT                                                                 &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT     &kp END       XXX
-LOP_3  &kp LC(A)       &kp LS(LC(C))   &kp LS(LC(V))    &kp u_REDO         P_CMNT_B  XXX                                              XXX           XXX           &kp LS(TAB)   &kp K_APP     &kp TAB       RAR_0         XXX
-XXX    XXX             XXX                              L_ENC              &kp LTK_3 ___          &kp LG(L)             &kp RTK_1     &kp RTK_2     &kp RTK_3     R_ENC                       RAR_1         RAR_2         RAR_3
+LOP_1  U_SWI_POP       &kp LA(ESC)     &kp LC(R)        &kp F5             &kp F2                                                                   &kp INSERT    &kp PG_UP     &kp UP        &kp PG_DN     XXX           XXX
+LOP_2  &sm LGUI LC(X)  &sm LALT LC(C)  &sm LCTRL LC(V)  &sm LSHIFT u_UNDO  &kp SPACE                                                                &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT     &kp END       XXX
+LOP_3  &kp LC(A)       &kp LS(LC(C))   &kp LS(LC(V))    &kp u_REDO         ________   &kp LG(L)                                       XXX           XXX           &kp LS(TAB)   &kp K_APP     &kp TAB       RAR_0         XXX
+XXX    XXX             XXX                              L_ENC              &kp LTK_3  ___         &kp LG(L)             &kp RTK_1     &kp RTK_2     &kp RTK_3     R_ENC                       RAR_1         RAR_2         RAR_3
                         >;
 
                         sensor-bindings = <&inc_dec_kp P_ P_ &inc_dec_kp LS(TAB) TAB>;
