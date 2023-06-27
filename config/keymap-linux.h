@@ -5,6 +5,8 @@
 #define U_UNDO     &kp u_UNDO       // Undo
 #define u_REDO     LS(LC(DE_Z))     // Redo
 #define U_REDO     &kp u_REDO       // Redo
+#define u_FIND     LC(F)            // Find
+#define U_FIND     &kp u_FIND       // Redo
 
 // gnome-shell extension | Custom Hot Corners - Extended
 #define U_DARK     &kp LG(K_PP)     // Light/Dark Gtk Theme toggle
