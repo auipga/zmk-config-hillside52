@@ -9,8 +9,9 @@
 /*l*/#define P_LOCNXT  &kp LC(LS(PG_DN))    // Navigate: Next Edit Location (custom)
 /*l*/#define P_ACTION  &kp LC(LS(A))        // Find action...
 /*l*/#define P_CLPCMP  &kp LA(LS(D))        // compare with clipboard
-/*l*/#define P_DUPLIC  &kp LC(D)            // duplicate line/selection
-/*l*/#define P_COMPAR  &kp LC(D)            // compare
+/*l*/#define p_DUPLIC  LC(D)                // compare or duplicate line/selection
+/*l*/#define P_DUPLIC  &kp p_DUPLIC         // duplicate
+/*l*/#define P_COMPAR  &kp p_DUPLIC         // compare
 /*l*/#define P_DEL_L   &kp LC(DE_Y)         // delete line
 /*_*/#define P_INTENT  &kp LC(LA(I))        // intent
 /*_*/#define P_REFORM  &kp LC(LA(L))        // reformat
@@ -25,10 +26,16 @@
 /*_*/#define P_Q_DOC   &kp LC(Q)            // Quick documentation
 /*_*/#define P_Q_DEF   &kp LC(LS(I))        // Quick definition
 
+#define p_SETTIN    LC(LA(S))         // Settings
 // Tool windows
-#define P_W_GIT    &kp LA(N9)         // GIT
+#define p_W_GIT    LA(N9)             // GIT
+#define P_W_GIT    &kp p_W_GIT        // GIT
 #define P_W_TERM   &kp LA(F12)        // Terminal
-#define P_W_ReHo   &kp LA(R)          // Remote Host (custom)
+#define p_W_ReHo   LA(R)              // Remote Host (custom)
+#define P_W_ReHo   &kp p_W_ReHo       // Remote Host (custom)
+#define P_RemoCo   &kp LA(K)          // Compare local file with deployed (custom)
+#define P_RemoUp   &kp p_W_ReHo       // Remote Host (custom)
+
 
 // viel mit arrows danach
 /*l*/#define P_COLAPS  &kp LC(KP_MINUS)     // collapse block        (+alt recursive, +LS=all)
@@ -41,6 +48,7 @@
 /*l*/#define P_RCNT_L  &kp LS(LC(E))        // recent locations
 /*l*/#define p_SELOCC  LA(J)                // select next occurance (+LC+LS=all, auch von der Suche aus)
 /*l*/#define P_SELOCC  &kp p_SELOCC         // select next occurance
+/*l*/#define p_SELOC_  LS(p_SELOCC)         // unselect last occurance
 /*l*/#define P_SELOC_  &kp LS(p_SELOCC)     // unselect last occurance
 /*l*/#define p_NEXT    F3               // next occurance (of search or current selection)
 /*l*/#define p_PREV    LS(F3)           // prev occurance (of search or current selection)
@@ -71,10 +79,12 @@
 
 // git
 /*_*/#define P_GITPOP  &kp LA(DE_PLUS)      // VCS Actions Popup (custom, else LA(GRAVE))
-/*_*/#define P_G_ComW  &kp LC(K)            // Commit dialog
-/*_*/#define P_G_Comm  &kp LA(I)            // Comm&it button in the dialog
-/*_*/#define P_G_ComP  &kp LS(LC(K))        // Push (in the dialog: Commit then Push)
-/*_*/#define P_G_Push  &kp LA(P)            // &Push button in the dialog
+/*_*/#define p_G_ComW  LC(K)                // Commit dialog
+/*_*/#define P_G_ComW  &kp p_G_ComW         // Commit dialog
+/*_*/#define P_G_Comm  &kp LA(I)            // - in dialog: Commit button
+/*_*/#define P_G_ComP  &kp LA(p_G_ComW)     // - in dialog: Commit then Push
+/*_*/#define P_G_PusW  &kp LS(p_G_ComW)     // Push dialog
+/*_*/#define P_G_Push  &kp LA(P)            // - in dialog: Push button
 
 // Comparison window
 /*_*/#define P_CMPNXT  &kp LA(LS(RIGHT))    // Compare next file
