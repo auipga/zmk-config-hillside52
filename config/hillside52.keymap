@@ -14,17 +14,17 @@
 #include "keymap-linux.h"
 #include "keymap-phpstorm.h"
 
-#define DK_HRM_L 0
-#define DVORAK_L 1
-#define NUM_L    2
-#define NAV_L    3
-#define MED_L    4
-#define SYM_L    5
-#define FUN_L    6
-#define PHP_L    7
-#define P_FIND_L 8
-#define P_SEL_L  9
-#define P_GIT_L 10
+#define DK_HRM_L 0 // C_VOL_DN  C_VOL_UP  ✔   LEFT      RIGHT     ✔
+#define DVORAK_L 1 // DE_LT     DE_GT     ✖   DE_LT     DE_GT     ✖
+#define NUM_L    2 //                     ✖   UP        DOWN      ✔
+#define NAV_L    3 //                     ✖   u_TAB_PRV u_TAB_NXT ✔
+#define MED_L    4 // LEFT      RIGHT     ✔                       ✖
+#define SYM_L    5 // u_TAB_PRV u_TAB_NXT ✖                       ✖
+#define FUN_L    6 // u_BRI_DN  u_BRI_UP  ✔  u_BRI_DN  u_BRI_UP   ✖
+#define PHP_L    7 //                     ✖  p_PREV    p_NEXT     ✔
+#define P_FIND_L 8 //                     ✖  p_PREV    p_NEXT     ✖
+#define P_SEL_L  9 //                     ✖                       ✖
+#define P_GIT_L 10 //                     ✖                       ✖
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &hm LGUI  k1   &hm LALT  k2   &hm LCTRL k3   &hm LSHFT k4
