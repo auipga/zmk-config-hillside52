@@ -27,8 +27,8 @@
 #define P_GIT_L 10
 
 // Home row mods macro
-#define HRML(k1,k2,k3,k4) &hm LCTRL k1 &hm LALT k2  &hm LGUI k3 &hm LSHFT k4
-#define HRMR(k1,k2,k3,k4) &hm RSHFT k4 &hm RGUI k1  &hm RALT k3 &hm RCTRL k2
+#define HRML(k1,k2,k3,k4) &hm LGUI  k1   &hm LALT  k2   &hm LCTRL k3   &hm LSHFT k4
+#define HRMR(k1,k2,k3,k4) &hm RSHFT k4   &hm RCTRL k1   &hm LALT  k3   &hm RGUI  k2
 &lt {
     tapping-term-ms = <200>;
     quick_tap_ms = <300>;
