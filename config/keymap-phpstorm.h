@@ -8,7 +8,8 @@
 /*l*/#define P_LOCPRV  &kp LC(LS(PG_UP))    // Navigate: Last Edit Location (custom, else C(S(BSPC)))
 /*l*/#define P_LOCNXT  &kp LC(LS(PG_DN))    // Navigate: Next Edit Location (custom)
 /*l*/#define P_ACTION  &kp LC(LS(A))        // Find action...
-/*l*/#define P_CLPCMP  &kp LA(LS(D))        // compare with clipboard
+/*l*/#define p_CLPCMP  LA(LS(D))            // compare with clipboard
+/*l*/#define P_CLPCMP  &kp p_CLPCMP         // compare with clipboard
 /*l*/#define p_DUPLIC  LC(D)                // compare or duplicate line/selection
 /*l*/#define P_DUPLIC  &kp p_DUPLIC         // duplicate
 /*l*/#define P_COMPAR  &kp p_DUPLIC         // compare

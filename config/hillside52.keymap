@@ -212,7 +212,7 @@ XXX           XXX           XXX                         L_ENC         LT_3      
                 phpstorm_layer {
                         bindings = <
 LOP_1     ________  LC(D)                 P_FOLD                P_COLAPS  P_EXPAND                                                      ________      P_DECLAR      P_PARAMS      P_Q_DOC       P_Q_DEF       ________
-LOP_2     P_DEL_L   &lt P_CMP_L P_CLPCMP  &lt P_FIND_L u_FIND   P_STRPOP  P_COMENT                                                      ________      P_F_STRK      P_INTENT      P_REFORM      P_BOKMRK      ________
+LOP_2     P_DEL_L   &lt P_CMP_L p_CLPCMP  &lt P_FIND_L u_FIND   P_STRPOP  P_COMENT                                                      ________      P_F_STRK      P_INTENT      P_REFORM      P_BOKMRK      ________
 LOP_3     P_RENAME  &lt P_GIT_L p_W_GIT   &lt P_SEL_L p_SELOCC  P_SELMOR  P_CMNT_B  ________                              ________      ________      P_TEMPL       P_SURRWI      ________      RAR_0         ROP_3
 ________  ________  ________                                    L_ENC     ___       ________  ________      P_ACTION      XXX           &kp LSHIFT    R_ENC                       RAR_1         RAR_2         RAR_3
                         >;
