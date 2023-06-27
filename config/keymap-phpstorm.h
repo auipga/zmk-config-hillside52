@@ -89,7 +89,9 @@
 // Comparison window
 /*_*/#define P_CMPNXT  &kp LA(LS(RIGHT))    // Compare next file
 /*_*/#define P_CMPPRV  &kp LA(LS(LEFT))     // Compare previous file
-/*_*/#define P_DIFNXT  &kp F7               // Go to next difference
-/*_*/#define P_DIFPRV  &kp LS(F7)           // Go to previous difference
+/*_*/#define p_DIFNXT  F7                   // Go to next difference
+/*_*/#define p_DIFPRV  LS(F7)               // Go to previous difference
+/*_*/#define P_DIFNXT  &kp p_DIFNXT         // Go to next difference
+/*_*/#define P_DIFPRV  &kp p_DIFPRV         // Go to previous difference
 
 
