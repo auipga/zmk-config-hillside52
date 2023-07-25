@@ -15,7 +15,7 @@
 #include "keymap-phpstorm.h"
 
 #define DK_HRM_L 0 // C_VOL_DN  C_VOL_UP  ✔   ⬅         ➡         ✔
-#define DVORAK_L 1 // <         >         ✖   <         >         ✖
+#define DVORAK_L 1 // C_VOL_DN  C_VOL_UP  ✔   ⬅         ➡         ✔
 #define NUM_L    2 // ⬇         ⬆         ✖   ⬅         ➡         ✔
 #define NAV_L    3 //                     ✖   u_TAB_PRV u_TAB_NXT ✔
 #define MED_L    4 // LEFT      RIGHT     ✔                       ✖
@@ -144,7 +144,7 @@ LOP_3         &kp  DE_SEMI  &kp  Q        &kp  J        &kp  K        &kp  X    
 LAR_1         LAR_2         LAR_3                       L_ENC         LT_3          LT_2          LT_1                  RT_1          RT_2          RT_3          R_ENC                       RAR_1         RAR_2         RAR_3
                         >;
 
-                        sensor-bindings = <&inc_dec_kp DE_LT DE_GT &inc_dec_kp DE_LT DE_GT>;
+                        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
                 };
 
                 numbers_layer {
