@@ -27,7 +27,7 @@
 /*_*/#define P_Q_DOC   &kp LC(Q)            // Quick documentation
 /*_*/#define P_Q_DEF   &kp LC(LS(I))        // Quick definition
 
-#define p_SETTIN    LC(LA(S))         // Settings
+#define P_SETTIN   &kp LC(LA(S))         // Settings
 // Tool windows
 #define p_W_GIT    LA(N9)             // GIT
 #define P_W_GIT    &kp p_W_GIT        // GIT
