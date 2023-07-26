@@ -16,7 +16,7 @@
 
 #define DK_HRM_L 0 // C_VOL_DN  C_VOL_UP  ✔   ⬅         ➡         ✔
 #define DVORAK_L 1 // C_VOL_DN  C_VOL_UP  ✔   ⬅         ➡         ✔
-#define NUM_L    2 // ⬇         ⬆         ✖   ⬅         ➡         ✔
+#define NUM_L    2 // ⬆         ⬇         ✖   ⬅         ➡         ✔
 #define NAV_L    3 //                     ✖   u_TAB_PRV u_TAB_NXT ✔
 #define MED_L    4 // LEFT      RIGHT     ✔                       ✖
 #define SYM_L    5 // u_TAB_PRV u_TAB_NXT ✖                       ✖
@@ -159,7 +159,7 @@ ___           ___           ___           ___           ___           ___       
 ___           ___           ___                         L_ENC         ___           ___           ___                   &kp BSPC      &kp KP_N0     &kp DEL           R_ENC                   RAR_1         RAR_2         RAR_3
                         >;
 
-                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp LEFT RIGHT>;
+                        sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
                 };
 
                 nav_layer {
