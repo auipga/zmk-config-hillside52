@@ -57,7 +57,7 @@
 #define LTK_2    SPACE // ✔
 #define LTK_3    ESC   // ✔
 //#define LTK_4    L_ENC  ✔
-#define LTK_2_1  &TD_a
+#define LTK_2_1  &a_ret
 
 // Right Thumb Keys
 #define RTK_1    RET   // ✔
