@@ -30,3 +30,6 @@
 // https://extensions.gnome.org/extension/2645/brightness-control-using-ddcutil/
 #define u_BRI_UP  LC(C_BRI_UP)      // bash -c "ddcutil setvcp 10 +10"
 #define u_BRI_DN  LC(C_BRI_DN)      // bash -c "ddcutil setvcp 10 -10"
+
+// gnome-shell arcmenu
+#define U_RUN     &kp LG(DE_COMMA)  // arc menu runner
