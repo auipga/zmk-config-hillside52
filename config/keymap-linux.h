@@ -13,6 +13,8 @@
 #define U_ZOOM     &kp LG(LS(DE_Z)) // Large Text toggle (Zoom)
 #define U_PROMPT   &kp LA(F2)       // Alt-F2 prompt (+LG=restart gnome shell)
 #define U_SWI_POP  &kp LG(W)        // Window Switcher Popup (like Alt-Tab, but stays open)
+
+// OS default
 #define u_TAB_NXT  LC(TAB)          // Next Tab      (for sensor-bindings)
 #define u_TAB_PRV  LS(LC(TAB))      // Previous Tab  (for sensor-bindings)
 #define U_TAB_NXT  &kp u_TAB_NXT    // Next Tab

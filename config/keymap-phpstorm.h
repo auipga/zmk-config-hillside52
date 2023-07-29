@@ -6,9 +6,13 @@
 /*l*/#define P_undo    &kp LA(   BSPC )     // Edit: Undo
 /*l*/#define P_redo    &kp LA(LS(BSPC))     // Edit: Redo
 /*l*/#define p_LOCPRV  LC(LS(PG_UP))        // Navigate: Last Edit Location (custom, else C(S(BSPC)))
-/*l*/#define p_LOCNXT  LC(LS(PG_DN))        // Navigate: Next Edit Location (custom)
 /*l*/#define P_LOCPRV  &kp p_LOCPRV         // Navigate: Last Edit Location (custom, else C(S(BSPC)))
+/*l*/#define p_LOCNXT  LC(LS(PG_DN))        // Navigate: Next Edit Location (custom)
 /*l*/#define P_LOCNXT  &kp p_LOCNXT         // Navigate: Next Edit Location (custom)
+/*l*/#define p_CURBAK  LC(LA(RIGHT))        // Back    (cursor movement, same as Mouse Buttons)
+/*l*/#define P_CURBAK  &kp p_CURBAK         // Back    (cursor movement, same as Mouse Buttons)
+/*l*/#define p_CURFWD  LC(LA(LEFT))         // Forward (cursor movement, same as Mouse Buttons)
+/*l*/#define P_CURFWD  &kp p_CURFWD         // Forward (cursor movement, same as Mouse Buttons)
 /*l*/#define P_ACTION  &kp LC(LS(A))        // Find action...
 /*l*/#define p_CLPCMP  LA(LS(D))            // compare with clipboard
 /*l*/#define P_CLPCMP  &kp p_CLPCMP         // compare with clipboard
@@ -73,12 +77,13 @@
 /*r*/#define P_REPLAA  &kp LS(LC(R))        // replace overall
 
 /*l*/#define P_REFACT  &kp LC(LA(LS(T)))    // Refactor this
-//#define P_IN_VAR  &kp LC(LA(V))             // Introduce variable
-//#define P_IN_PAR  &kp LC(LA(P))             // Introduce parameter
-//#define P_IN_CON  &kp LC(LA(C))             // Introduce constant
-//#define P_IN_FLD  &kp LC(LA(F))             // Introduce field
-//#define P_SURRWI  &kp LC(LA(M))             // Extract method
-/*_*/#define P_SURRWI  &kp LA(KP_N0)        // surround with, LC(LA(T))
+/*_*/#define P_EX_VAR  &kp LC(LA(V))        // Introduce variable
+/*_*/#define P_EX_PAR  &kp LC(LA(P))        // Introduce parameter
+/*_*/#define P_EX_CON  &kp LC(LA(C))        // Introduce constant
+/*_*/#define P_EX_FLD  &kp LC(LA(F))        // Introduce field
+/*_*/#define P_EX_MTD  &kp LC(LA(M))        // Extract method
+/*_*/#define P_SURWIT  &kp LC(LA(T))        // surround with ...
+/*_*/#define P_SURTPL  &kp LC(LA(J))        // surround with Live Template
 
 // git
 /*_*/#define P_GITPOP  &kp LA(DE_PLUS)      // VCS Actions Popup (custom, else LA(GRAVE))
