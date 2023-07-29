@@ -15,7 +15,7 @@
 
 // Browser
 #define U_ADRBAR   &kp LC(L)        // focus address bar (Nautilus too)
-#define U_DEVTOG   &kp LC(LS(I)     // Inspect Element (toggle dev tools)
+#define U_DEVTOG   &kp LC(LS(I))    // Inspect Element (toggle dev tools)
 
 // YouTube website
 #define YT_FASTER  &kp LS(DE_DOT)
