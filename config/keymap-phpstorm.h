@@ -38,8 +38,9 @@
 #define p_W_GIT    LA(N9)             // GIT
 #define P_W_GIT    &kp p_W_GIT        // GIT
 #define P_W_TERM   &kp LA(F12)        // Terminal
-#define p_W_ReHo   LA(R)              // Remote Host (custom)
-#define P_W_ReHo   &kp p_W_ReHo       // Remote Host (custom)
+#define p_W_ReHo   LA(R)              // Browse Remote Host (custom)
+#define P_W_ReHo   &kp p_W_ReHo       // Browse Remote Host (custom)
+#define P_F_ReHo   &kp LS(LA(R))      // Show [opened file] in Remote Host (custom; used to be 'rerun tests')
 #define P_RemoCo   &kp LA(K)          // Compare local file with deployed (custom)
 #define P_RemoUp   &kp p_W_ReHo       // Remote Host (custom)
 
