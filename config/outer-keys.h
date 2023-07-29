@@ -87,7 +87,7 @@
 #define LT_2    &lt LTL_2    LTK_2
 #define LT_3    &lt LTL_3    LTK_3
 #define L_ENC   &none
-#define LT_2_1  &kp          LTK_2_1
+#define LT_2_1               LTK_2_1
 //
 #define RT_1    &lt RTL_1    RTK_1
 #define RT_2    &lt RTL_2    RTK_2
