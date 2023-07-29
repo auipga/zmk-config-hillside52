@@ -64,7 +64,7 @@
 #define RTK_2    BSPC  // ✔
 #define RTK_3    DEL   // ✔
 //#define RTK_4    R_ENC  ✔
-#define RTK_2_1  _____ //todo
+#define RTK_2_1  ________ //todo
 
 
 // Left Thumb Layer switching
