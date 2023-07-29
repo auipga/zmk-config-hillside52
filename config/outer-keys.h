@@ -57,14 +57,14 @@
 #define LTK_2    SPACE // ✔
 #define LTK_3    ESC   // ✔
 //#define LTK_4    L_ENC  ✔
-#define LTK_2_1  LSHFT
+#define LTK_2_1  &TD_a
 
 // Right Thumb Keys
 #define RTK_1    RET   // ✔
 #define RTK_2    BSPC  // ✔
 #define RTK_3    DEL   // ✔
 //#define RTK_4    R_ENC  ✔
-#define RTK_2_1  &TD_a
+#define RTK_2_1  _____ //todo
 
 
 // Left Thumb Layer switching
