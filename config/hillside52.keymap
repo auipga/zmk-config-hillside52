@@ -217,7 +217,7 @@ LOP_3     P_W_ReHo  &lt P_GIT_L p_W_GIT   &lt P_SEL_L p_SELOCC  P_SELMOR  P_CMNT
 ________  ________  ________                                    L_ENC     ___       ________  ________      P_ACTION      XXX           &kp LSHIFT    R_ENC                       RAR_1         RAR_2         RAR_3
                         >;
 
-                        sensor-bindings = <&inc_dec_kp P_ P_ &inc_dec_kp p_PREV p_NEXT>;
+                        sensor-bindings = <&inc_dec_kp p_LOCPRV p_LOCNXT &inc_dec_kp u_UNDO u_REDO>;
                 };
 
                 phpstorm_find_layer { // P_FIND_L

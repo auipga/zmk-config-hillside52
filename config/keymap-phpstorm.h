@@ -5,8 +5,10 @@
 // one action
 /*l*/#define P_undo    &kp LA(   BSPC )     // Edit: Undo
 /*l*/#define P_redo    &kp LA(LS(BSPC))     // Edit: Redo
-/*l*/#define P_LOCPRV  &kp LC(LS(PG_UP))    // Navigate: Last Edit Location (custom, else C(S(BSPC)))
-/*l*/#define P_LOCNXT  &kp LC(LS(PG_DN))    // Navigate: Next Edit Location (custom)
+/*l*/#define p_LOCPRV  LC(LS(PG_UP))        // Navigate: Last Edit Location (custom, else C(S(BSPC)))
+/*l*/#define p_LOCNXT  LC(LS(PG_DN))        // Navigate: Next Edit Location (custom)
+/*l*/#define P_LOCPRV  &kp p_LOCPRV         // Navigate: Last Edit Location (custom, else C(S(BSPC)))
+/*l*/#define P_LOCNXT  &kp p_LOCNXT         // Navigate: Next Edit Location (custom)
 /*l*/#define P_ACTION  &kp LC(LS(A))        // Find action...
 /*l*/#define p_CLPCMP  LA(LS(D))            // compare with clipboard
 /*l*/#define P_CLPCMP  &kp p_CLPCMP         // compare with clipboard
