@@ -151,7 +151,7 @@ LAR_1         LAR_2         LAR_3                       L_ENC         LT_3      
                         bindings = <
 ___           &kp F12       U_TAB_PRV     U_TAB_NXT     &kp K_BACK    &kp K_FORWARD                                                                 &kp KP_NUM        &kp KP_N7   &kp KP_N8   &kp KP_N9     &kp DE_COLON  &kp KP_DIVIDE
 ___           &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHIFT    &kp F5                                                                        &kp KP_PLUS       &kp KP_N4   &kp KP_N5   &kp KP_N6     &kp DE_COMMA  &kp KP_MINUS
-___           ___           ___           ___           ___           ___           &kp K_CALC                                        XXX           &kp KP_MULTIPLY   &kp KP_N1   &kp KP_N2   &kp KP_N3     RAR_0         &kp K_CALC
+___           ___           ___           ___           ___           ___           &kp K_CALC                                        XXX           &kp KP_MULTIPLY   &kp KP_N1   &kp KP_N2   &kp KP_N3     RAR_0         XXX
 ___           ___           ___                         L_ENC         ___           ___           ___                   &kp BSPC      &kp KP_N0     &kp DEL           R_ENC                   RAR_1         RAR_2         RAR_3
                         >;
 
