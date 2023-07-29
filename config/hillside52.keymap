@@ -172,8 +172,8 @@ XXX    XXX             XXX                              L_ENC              &kp L
                 media_layer {
                         bindings = <
 YT_SLOWER     YT_FASTER     XXX           XXX     &bt BT_SEL 0  &out OUT_USB                                                                        XXX   XXX   XXX   XXX   XXX   XXX
-&kp K_PREV    &kp K_NEXT    &kp LS(PSCRN) XXX     &bt BT_SEL 1  &out OUT_BLE                                                                        XXX   XXX   XXX   XXX   XXX   XXX
-U_DARK        U_ZOOM        &kp PSCRN     XXX     &bt BT_SEL 2  &bt BT_CLR    &bootloader                                             &bootloader   XXX   XXX   XXX   XXX   RAR_0 XXX
+&kp K_PREV    &kp K_NEXT    XXX           XXX     &bt BT_SEL 1  &out OUT_BLE                                                                        XXX   XXX   XXX   XXX   XXX   XXX
+U_DARK        U_ZOOM        XXX           XXX     &bt BT_SEL 2  &bt BT_CLR    &bootloader                                             &bootloader   XXX   XXX   XXX   XXX   RAR_0 XXX
 &kp M         ___           &kp F                 L_ENC         XXX           &sys_reset    XXX                         XXX           &sys_reset    XXX   R_ENC       RAR_1 RAR_2 RAR_3
                         >;
 
