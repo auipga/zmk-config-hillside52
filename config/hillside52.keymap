@@ -72,6 +72,10 @@
         ZMK_MACRO(php_dao,   bindings = <&kp SPACE     &kp DE_EQUAL  &kp DE_GT     &kp SPACE     >; )
         // ' = $' space equal space dollar
         ZMK_MACRO(php_ed,    bindings = <&kp SPACE     &kp DE_EQUAL  &kp SPACE     &kp DE_DLLR   >; )
+        // Scratch (PhpStorm)
+        ZMK_MACRO(php_sn,    bindings = <&kp LA(C)     &kp LA(A)     >; ) // New Scratch
+        ZMK_MACRO(php_sd,    bindings = <&kp LA(C)     &kp LA(C)     >; ) // Open Default Scratch
+        ZMK_MACRO(php_sl,    bindings = <&kp LA(C)     &kp LA(S)     >; ) // Open Scratch List
 
         // other stuff
         ZMK_MACRO(a_ret,     bindings = <&kp A         &kp RET       >; )
@@ -203,9 +207,9 @@ XXX           XXX           XXX                         L_ENC         LT_3      
 
                 phpstorm_layer {
                         bindings = <
-LOP_1     P_SETTIN  P_COMPAR              P_FOLD                P_COLAPS  P_EXPAND                                                      ________      P_DECLAR      P_PARAMS      P_Q_DOC       P_Q_DEF       ________
-LOP_2     P_W_TERM  &lt P_CMP_L p_CLPCMP  &lt P_FIND_L u_FIND   P_STRPOP  P_COMENT                                                      ________      P_F_STRK      P_INTENT      P_REFORM      P_BOKMRK      ________
-LOP_3     P_W_ReHo  &lt P_GIT_L p_W_GIT   &lt P_SEL_L p_SELOCC  P_SELMOR  P_CMNT_B  ________                              ________      ________      P_TEMPL       P_SURRWI      P_RENAME      RAR_0         ROP_3
+LOP_1     P_SETTIN  P_COMPAR              P_FOLD                P_COLAPS  P_EXPAND                                                      &php_sn       P_DECLAR      P_PARAMS      P_Q_DOC       P_Q_DEF       ________
+LOP_2     P_W_TERM  &lt P_CMP_L p_CLPCMP  &lt P_FIND_L u_FIND   P_STRPOP  P_COMENT                                                      &php_sd       P_F_STRK      P_INTENT      P_REFORM      P_BOKMRK      ________
+LOP_3     P_W_ReHo  &lt P_GIT_L p_W_GIT   &lt P_SEL_L p_SELOCC  P_SELMOR  P_CMNT_B  ________                              ________      &php_sl       P_TEMPL       P_SURRWI      P_RENAME      RAR_0         ROP_3
 ________  ________  ________                                    L_ENC     ___       ________  ________      P_ACTION      XXX           &kp LSHIFT    R_ENC                       RAR_1         RAR_2         RAR_3
                         >;
 
