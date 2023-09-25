@@ -70,8 +70,6 @@
         ZMK_MACRO(php_oo,    bindings = <&kp DE_MINUS  &kp DE_GT     >; )
         // ' => ' double arrow operator
         ZMK_MACRO(php_dao,   bindings = <&kp SPACE     &kp DE_EQUAL  &kp DE_GT     &kp SPACE     >; )
-        // ' = $' space equal space dollar
-        ZMK_MACRO(php_ed,    bindings = <&kp SPACE     &kp DE_EQUAL  &kp SPACE     &kp DE_DLLR   >; )
         // Scratch (PhpStorm)
         ZMK_MACRO(php_sn,    bindings = <&kp LA(C)     &kp LA(A)     >; ) // New Scratch
         ZMK_MACRO(php_sd,    bindings = <&kp LA(C)     &kp LA(C)     >; ) // Open Default Scratch
@@ -111,7 +109,7 @@
 
                 // row 2
                 COMBC(27, 28, &php_oo ) /* `->`         */ COMBO(33, 34, DE_EQUAL) // =
-                COMBC(28, 29, &php_dao) /* ` => ` inner */ COMBC(32, 33, &php_ed ) // ` = $` inner
+                COMBC(28, 29, &php_dao) // ` => ` inner */ COMBC(32, 33, ___     ) //
 
                 // Other
                 COMBC( 16, 19, &capsing) // both hrm shifts, 1st caps_word, 2nd CAPS
