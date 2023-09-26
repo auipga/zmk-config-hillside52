@@ -142,29 +142,29 @@ LAR_1         LAR_2         LAR_3                       L_ENC         LT_3      
                 };
 
                 numbers_layer {
-                    // _F<><>      N789:/     F: F12, <>: TabNav bzw. Browse; NUM lock, todo: num+lefthanded_nav
-                    // _GACSF      +456,-     F: F5, GACS modifier
-                    // ______      *123⬆C     C: Calc
+                    // __⬅➡FF      _789./     ⬅/➡: History, F: F5, F12
+                    // _GACS_      +456,-     GACS modifier
+                    // __a.,_C    _*123⬆:     a: RALT, C: Calc
                     // ___ ð__x  B0Dð ⬅⬇➡     _: frei, x: frei; B: BSPC, D: DEL
                         bindings = <
-___           &kp F12       U_TAB_PRV     U_TAB_NXT     &kp K_BACK    &kp K_FORWARD                                                                 &kp KP_NUM        &kp KP_N7   &kp KP_N8   &kp KP_N9     &kp DE_COLON  &kp KP_DIVIDE
-___           &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHIFT    &kp F5                                                                        &kp KP_PLUS       &kp KP_N4   &kp KP_N5   &kp KP_N6     &kp DE_COMMA  &kp KP_MINUS
-___           ___           ___           ___           ___           ___           &kp K_CALC                                        XXX           &kp KP_MULTIPLY   &kp KP_N1   &kp KP_N2   &kp KP_N3     RAR_0         XXX
-___           ___           ___                         L_ENC         ___           ___           ___                   &kp BSPC      &kp KP_N0     &kp DEL           R_ENC                   RAR_1         RAR_2         RAR_3
+________      ________      &kp u_BACK    &kp u_FWD     &kp F5        &kp F12                                                                       XXX               &kp N7      &kp N8      &kp N9        &kp DE_COLON  &kp KP_DIVIDE
+________      &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHIFT    U_DEVTOG                                                                      &kp KP_PLUS       &kp N4      &kp N5      &kp N6        &kp DE_DOT    &kp KP_MINUS
+________      ________      &kp RALT      &kp DE_DOT    &kp DE_COMMA  &kp LS(LC(C)) &kp K_CALC                                        XXX           &kp KP_MULTIPLY   &kp N1      &kp N2      &kp N3        RAR_0         &kp DE_COMMA
+________      ________      ________                    L_ENC         &kp LEFT      &kp RIGHT     XXX                   &kp BSPC      &kp N0        &kp DEL           R_ENC                   RAR_1         RAR_2         RAR_3
                         >;
 
-                        sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
+                        sensor-bindings = <&inc_dec_kp u_TAB_PRV u_TAB_NXT &inc_dec_kp LS(TAB) TAB>;
                 };
 
                 nav_layer {
                         bindings = <
-LOP_1      &kp LA(ESC)     &kp C_AC_BACK   &kp C_AC_FORWARD &kp F5             &kp F2                                                                   &kp PG_UP     &kp HOME      &kp UP        &kp END       &kp PG_DN     U_RUN
-U_DEVTOG   &sm LGUI LC(X)  &sm LALT LC(C)  &sm LCTRL LC(V)  &sm LSHIFT u_UNDO  P_COMENT                                                                 &kp INSERT    &kp LEFT      &kp DOWN      &kp RIGHT     &kp K_APP     U_PROMPT
-XXX        &kp LC(A)       &kp LS(LC(C))   &kp LS(LC(V))    &kp u_REDO         P_CMNT_B       &kp LG(L)                                   &bootloader   XXX           &kp LS(TAB)   &kp ESC       &kp TAB       RAR_0         XXX
+ESC        &kp LA(ESC)     U_TAB_PRV       U_TAB_NXT        &kp F5             &kp F2                                                                   &kp PG_UP     &kp HOME      &kp UP        &kp END       &kp PG_DN     XXX
+U_CONSOL   &sm LGUI LC(X)  &sm LALT LC(C)  &sm LCTRL LC(V)  &sm LSHIFT u_UNDO  P_COMENT                                                                 &kp INSERT    &kp LEFT      &kp DOWN      &kp RIGHT     XXX           XXX
+U_SYSMON   &kp LC(A)       &kp LS(LC(C))   &kp LS(LC(V))    &kp u_REDO         P_CMNT_B       &kp LG(L)                                   &bootloader   U_PROMPT      &kp LS(TAB)   &kp K_APP     &kp TAB       RAR_0         XXX
 XXX        XXX             XXX                              L_ENC              &kp LS(PSCRN)  ___         &bootloader                     &kp RTK_1     &kp RTK_2     &kp RTK_3     R_ENC                       RAR_1         RAR_2         RAR_3
                         >;
 
-                        sensor-bindings = <&inc_dec_kp u_TAB_PRV u_TAB_NXT &inc_dec_kp LS(TAB) TAB>;
+                        sensor-bindings = <&inc_dec_kp u_BACK u_FWD &inc_dec_kp UP DOWN>;
                 };
 
                 media_layer {
