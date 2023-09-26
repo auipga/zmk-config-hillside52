@@ -28,8 +28,8 @@
 #define P_SEL_L 11 //                     ✔  p_SELOC_  p_SELOCC   ✔
 
 // Home row mods macro
-#define HRML(k1,k2,k3,k4) &hm LGUI  k1   &hm LALT  k2   &hm LCTRL k3   &hm LSHFT k4
-#define HRMR(k1,k2,k3,k4) &hm RSHFT k1   &hm RCTRL k2   &hm LALT  k3   &hm RGUI  k4
+#define HRML(k1,k2,k3,k4) &sm LGUI  k1   &hm LALT  k2   &hm LCTRL k3   &hm LSHFT k4
+#define HRMR(k1,k2,k3,k4) &hm RSHFT k1   &hm RCTRL k2   &hm LALT  k3   &sm RGUI  k4
 &lt {
     tapping-term-ms = <200>;
     quick_tap_ms = <300>;
