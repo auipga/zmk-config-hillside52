@@ -123,7 +123,7 @@
                         bindings = <
 LOP_1         &kp  DE_SQT   &kp  DE_COMMA &kp  DE_DOT   &kp  P        &kp  DE_Y                                                                     &kp  F        &kp  G        &kp  C        &kp  R        &kp  L        &kp KP_SLASH
 LOP_2         HRML(A,       O,            E,            U       )     &kp  I                                                                        &kp  D        HRMR(H,       T,            N,            S       )     &kp DE_MINUS
-LOP_3         &kp  DE_SEMI  &hm  RALT Q   &kp  J        &kp  K        &kp  X        LT_2_1                                            RT_2_1        &kp  B        &kp  M        &kp  W        &hm  RALT V   &kp DE_Z      ROP_3
+LOP_3         &kp  DE_SEMI  &kp Q         &kp  J        &kp  K        &kp  X        LT_2_1                                            RT_2_1        &kp  B        &kp  M        &kp  W        &kp V         &kp DE_Z      ROP_3
 LAR_1         LAR_2         LAR_3                       L_ENC         LT_3          LT_2          LT_1                  RT_1          RT_2          RT_3          R_ENC                       RAR_1         RAR_2         RAR_3
                         >;
 
