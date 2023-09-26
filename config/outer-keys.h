@@ -62,7 +62,7 @@
 // Right Thumb Keys
 #define RTK_1    RET   // ✔
 #define RTK_2    BSPC  // ✔
-#define RTK_3    DEL   // ✔
+#define RTK_3    TAB   //
 //#define RTK_4    R_ENC  ✔
 #define RTK_2_1  ________ //todo
 
