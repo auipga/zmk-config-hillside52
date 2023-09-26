@@ -161,7 +161,7 @@ ________      ________      ________                    L_ENC         &kp LEFT  
 &kp ESC    &kp LA(ESC)     U_TAB_PRV       U_TAB_NXT        &kp F5             &kp F2                                                               &kp PG_UP     &kp HOME      &kp UP        &kp END       &kp PG_DN     XXX
 U_CONSOL   &sm LGUI LC(X)  &sm LALT LC(C)  &sm LCTRL LC(V)  &sm LSHIFT u_UNDO  P_COMENT                                                             &kp INSERT    &kp LEFT      &kp DOWN      &kp RIGHT     XXX           XXX
 U_SYSMON   &kp LC(A)       &kp LS(LC(C))   &kp LS(LC(V))    &kp u_REDO         P_CMNT_B       &kp LG(L)                               &bootloader   U_PROMPT      &kp LS(TAB)   &kp K_APP     &kp TAB       RAR_0         XXX
-XXX        XXX             XXX                              L_ENC              &kp LS(PSCRN)  ___         &bootloader   &none         &kp DEL       &kp ESC       R_ENC                       RAR_1         RAR_2         RAR_3
+XXX        XXX             XXX                              L_ENC              &kp LS(PSCRN)  ___         &bootloader   &kp RTK_1     &kp RTK_2     &kp RTK_3     R_ENC                       RAR_1         RAR_2         RAR_3
                         >;
 
                         sensor-bindings = <&inc_dec_kp u_BACK u_FWD &inc_dec_kp UP DOWN>;
