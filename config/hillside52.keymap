@@ -16,8 +16,8 @@
 
 #define DK_HRM_L 0 // C_VOL_DN  C_VOL_UP  ✔   ⬅         ➡         ✔
 #define DVORAK_L 1 // C_VOL_DN  C_VOL_UP  ✔   ⬅         ➡         ✔
-#define NUM_L    2 // ⬆         ⬇         ✖   ⬅         ➡         ✔
-#define NAV_L    3 //                     ✖   LS(TAB)   TAB       ✔
+#define NUM_L    2 // ⬅ prv-tab ➡ nxt-tab ✖   LS(TAB)   TAB       ✔
+#define NAV_L    3 // ⬅ back    ➡ fwd     ✖   ⬆         ⬇         ✔
 #define MED_L    4 // LEFT      RIGHT     ✔                       ✖
 #define SYM_L    5 // u_TAB_PRV u_TAB_NXT ✖                       ✖
 #define FUN_L    6 // u_BRI_DN  u_BRI_UP  ✔  u_BRI_DN  u_BRI_UP   ✖
