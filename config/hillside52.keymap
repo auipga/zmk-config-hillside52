@@ -194,13 +194,13 @@ LAR_1         LAR_2         LAR_3                       L_ENC         &kp BSPC  
 
                 function_layer {
                         bindings = <
-XXX           XXX           XXX           XXX           XXX           XXX                                                                           &kp LA(F4)    &kp F7        &kp F8        &kp F9        &kp F10       XXX
-XXX           &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHIFT    XXX                                                                           &kp PSCRN     &kp F4        &kp F5        &kp F6        &kp F11       XXX
-XXX           XXX           XXX           XXX           XXX           XXX           XXX                                               XXX           &kp LS(PSCRN) &kp F1        &kp F2        &kp F3        &kp F12       XXX
+XXX           XXX           XXX           XXX           XXX           XXX                                                                           &kp LA(F4)    &kp F7        &kp F8        &kp F9        &kp F10       &bt BT_SEL 0
+XXX           &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHIFT    XXX                                                                           &kp PSCRN     &kp F4        &kp F5        &kp F6        &kp F11       &bt BT_SEL 1
+XXX           XXX           XXX           XXX           XXX           XXX           XXX                                               XXX           &kp LS(PSCRN) &kp F1        &kp F2        &kp F3        &kp F12       &bt BT_SEL 2
 XXX           XXX           XXX                         L_ENC         LT_3          LT_2          LT_1                  XXX           XXX           ___           R_ENC                       XXX           XXX           XXX
                         >;
 
-                        sensor-bindings = <&inc_dec_kp u_BRI_DN u_BRI_UP &inc_dec_kp u_BRI_DN u_BRI_UP>;
+                        sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp u_BRI_DN u_BRI_UP>;
                 };
 
                 phpstorm_layer {
