@@ -31,7 +31,7 @@
 #define U_DARK     &kp LG(K_PP)     // Light/Dark Gtk Theme toggle
 #define U_ZOOM     &kp LG(LS(DE_Z)) // Large Text toggle (Zoom)
 #define U_PROMPT   &kp LA(F2)       // Alt-F2 prompt (+LG=restart gnome shell)
-#define U_SWI_POP  &kp LG(W)        // Window Switcher Popup (like Alt-Tab, but stays open)
+#define U_SWI_POP  &kp LG(W)        // Window Switcher Popup (like Alt-Tab, but stays open), LG(W) again closes!! xD
 
 // gnome-shell extension | Brightness control using ddcutil
 // https://extensions.gnome.org/extension/2645/brightness-control-using-ddcutil/
