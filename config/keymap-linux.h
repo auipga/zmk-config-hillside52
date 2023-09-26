@@ -12,6 +12,8 @@
 #define u_TAB_PRV  LS(LC(TAB))      // Previous Tab  (for sensor-bindings)
 #define U_TAB_NXT  &kp u_TAB_NXT    // Next Tab
 #define U_TAB_PRV  &kp u_TAB_PRV    // Previous Tab
+#define u_BACK     C_AC_BACK        // Browser back
+#define u_FWD      C_AC_FORWARD     // Browser forward
 
 // Browser
 #define U_ADRBAR   &kp LC(L)        // focus address bar (Nautilus too)
