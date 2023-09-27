@@ -56,7 +56,7 @@
             flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
         };
-        sx: slow_mods {
+        sx: slow_mods2 {
             compatible = "zmk,behavior-hold-tap";
             label = "SLOW_HOMEROW_MODS2";
             #binding-cells = <2>;
