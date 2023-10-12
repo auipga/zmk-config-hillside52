@@ -9,9 +9,9 @@
 /*l*/#define P_LOCPRV  &kp p_LOCPRV         // Navigate: Last Edit Location (custom, else C(S(BSPC)))
 /*l*/#define p_LOCNXT  LC(LS(PG_DN))        // Navigate: Next Edit Location (custom)
 /*l*/#define P_LOCNXT  &kp p_LOCNXT         // Navigate: Next Edit Location (custom)
-/*l*/#define p_CURBAK  LC(LA(RIGHT))        // Back    (cursor movement, same as Mouse Buttons)
+/*l*/#define p_CURBAK  LC(LA(LEFT))         // Back    (cursor movement, same as Mouse Buttons)
 /*l*/#define P_CURBAK  &kp p_CURBAK         // Back    (cursor movement, same as Mouse Buttons)
-/*l*/#define p_CURFWD  LC(LA(LEFT))         // Forward (cursor movement, same as Mouse Buttons)
+/*l*/#define p_CURFWD  LC(LA(RIGHT))        // Forward (cursor movement, same as Mouse Buttons)
 /*l*/#define P_CURFWD  &kp p_CURFWD         // Forward (cursor movement, same as Mouse Buttons)
 /*l*/#define P_ACTION  &kp LC(LS(A))        // Find action...
 /*l*/#define p_CLPCMP  LA(LS(D))            // compare with clipboard
