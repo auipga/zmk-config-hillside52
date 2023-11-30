@@ -167,9 +167,9 @@ ________      ________      ________                    L_ENC         &kp LEFT  
 
                 nav_layer {
                         bindings = <
-&kp ESC    &kp LA(ESC)     U_TAB_PRV       U_TAB_NXT        &kp F5             &kp F2                                                               &kp PG_UP     &kp HOME      &kp UP        &kp END       &kp PG_DN     BSPC
+&kp ESC    &kp LA(ESC)     U_TAB_PRV       U_TAB_NXT        &kp F5             &kp F2                                                               &kp PG_UP     &kp HOME      &kp UP        &kp END       &kp PG_DN     &kp BSPC
 U_CONSOL   &sm LGUI LC(X)  &sm LALT LC(C)  &sm LCTRL LC(V)  &sm LSHIFT u_UNDO  P_COMENT                                                             &kp INSERT    &kp LEFT      &kp DOWN      &kp RIGHT     XXX           XXX
-U_SYSMON   &kp LC(A)       &kp LS(LC(C))   &kp LS(LC(V))    &kp u_REDO         P_CMNT_B       &kp LG(L)                               &bootloader   U_PROMPT      &kp LS(TAB)   &kp K_APP     &kp TAB       RAR_0         RET
+U_SYSMON   &kp LC(A)       &kp LS(LC(C))   &kp LS(LC(V))    &kp u_REDO         P_CMNT_B       &kp LG(L)                               &bootloader   U_PROMPT      &kp LS(TAB)   &kp K_APP     &kp TAB       RAR_0         &kp RET
 XXX        XXX             XXX                              L_ENC              &kp LS(PSCRN)  ___         &bootloader   &kp RTK_1     &kp RTK_2     &kp RTK_3     R_ENC                       RAR_1         RAR_2         RAR_3
                         >;
 
