@@ -40,7 +40,7 @@
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            #label = "HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick_tap_ms = <200>;
@@ -49,7 +49,7 @@
         };
         sm: slow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "SLOW_HOMEROW_MODS";
+            #label = "SLOW_HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <1000>;
             quick_tap_ms = <300>;
@@ -58,7 +58,7 @@
         };
         sx: slow_mods2 {
             compatible = "zmk,behavior-hold-tap";
-            label = "SLOW_HOMEROW_MODS2";
+            #label = "SLOW_HOMEROW_MODS2";
             #binding-cells = <2>;
             tapping-term-ms = <1000>;
             quick_tap_ms = <300>;
@@ -67,7 +67,7 @@
         };
         capsing: tap_dance_caps_word_caps_lock {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_CAPS";
+            #label = "TAP_DANCE_CAPS";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&caps_word>, <&kp CAPS>;
